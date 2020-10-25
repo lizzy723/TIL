@@ -1,11 +1,14 @@
 # HTML(Hypertext Markup Language)
 
+---
+
 ## 1. Tag
 - Tags are used to delimit the start and end of elements in the markup.
 - Tag without `/` starts an instrunction, and a tag with `/` ends the instruction.
 - Make **indentations** to show **nested tags**.
 - Void tag: Single line instruction. Instead of closing tag, insert backslash(/) at the end. e.g. META
 
+---
 
 ## 2. Elements and text basic
 
@@ -31,13 +34,13 @@ Container for the displayable content of an HTML document.
 - `<em>...</em>` or `<i>...</i>`: Italic
 
 
-### E. Block element
+#### E. Block element
 - `<section>...</section>`: make a section
 - `<article>...</article>`: Used for articles and other similar content.
 - `<aside>...</aside>`: Used for content in a document which is separate from the main page content, for example, sidebars or advertising.
 - `<blockquote>...</blockquote>`: To indent them from both margins.
 
-
+---
 
 ## 3. List tags
 - `<OL></OL>`: ordered list
@@ -49,7 +52,7 @@ Container for the displayable content of an HTML document.
   - `<DT></DT>`: definition term
   - `<DD></DD>`: definition description
 
-
+---
 
 ## 4. Images
 - Image Prep
@@ -61,7 +64,7 @@ Container for the displayable content of an HTML document.
   	- alt: alternative text. 그림이 나타나지 않는 경우 나타나는 대체 텍스트
   - `<FIGURE></FIGURE>`: Used to group images and captions, along with `<figcaption>`.
 
-
+---
 
 ## 5. Tips
 - All multiple emtpy lines/spaces are rendered as just one space on web browser.
