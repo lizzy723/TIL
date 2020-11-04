@@ -2,10 +2,10 @@
 
 ## Table of contents
 
-1. Tag
-2. Document structure elements
-3. Document head elements	
-4. Document body elements
+1. [Tag](#1-tag)
+2. [Document structure elements](#2-document-structure-elements)
+3. [Document head elements](#3-document-head-elements)
+4. [Document body elements](#4-document-body-elements)
 
 
 ## 1. Tag
