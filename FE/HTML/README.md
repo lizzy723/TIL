@@ -87,7 +87,7 @@
 - Tags are NOT CASE SENSITIVE!
 - Use underscore(`_`) or dash(`-`) for your html file name. File name is same as bookmark name.
 - 웹 브라우저에서 `Cmd + O`로 바로 파일 열기를 할 수 있다. 
-- https://www.advancedwebranking.com/html/ : 사용 빈도가 높은 tag 위주로 익히기
+- 사용 빈도가 높은 tag 위주로 익히기: https://www.advancedwebranking.com/html/ 
 
 ### Reference
 - https://en.wikipedia.org/wiki/HTML_element
