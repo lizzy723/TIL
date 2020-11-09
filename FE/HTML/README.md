@@ -82,6 +82,7 @@
 
 
 ### Notes
+- 시각적인 요소도 중요하지만, **올바른 tag에 맞는 내용을 담는 것**이 더 중요하다.
 - All multiple emtpy lines/spaces are rendered as just one space on web browser.
 - Comments: `<!-- This is a comment -->` (command + /)
 - Tags are NOT CASE SENSITIVE!
