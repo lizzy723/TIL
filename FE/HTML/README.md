@@ -88,6 +88,8 @@
 - Use underscore(`_`) or dash(`-`) for your html file name. File name is same as bookmark name.
 - 웹 브라우저에서 `Cmd + O`로 바로 파일 열기를 할 수 있다. 
 - 사용 빈도가 높은 tag 위주로 익히기: https://www.advancedwebranking.com/html/ 
+- `<br/>` vs. `<p>...</p>`: paragraph임을 나타내는 `<p>` tag를 사용하는 것이 더 좋다. `<p>` tag + CSS를 사용하면 문단간의 간격도 조절할 수 있다. 
+> `<p style="margin-top:48px;">`
 
 ### Reference
 - https://en.wikipedia.org/wiki/HTML_element
