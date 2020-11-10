@@ -78,6 +78,11 @@
   		* alt: alternative text. 그림이 나타나지 않는 경우 나타나는 대체 텍스트
 	* `<FIGURE>...</FIGURE>`: Used to group images and captions, along with `<figcaption>`.
 
+### Table
+* `<table>...</table>`: table
+* `<tr>...</tr>`: table row
+* `<td>...</td>`: table data
+
 ---
 
 
@@ -91,6 +96,7 @@
 - 사용 빈도가 높은 tag 위주로 익히기: https://www.advancedwebranking.com/html/ 
 - `<br/>` vs. `<p>...</p>`: paragraph임을 나타내는 `<p>` tag를 사용하는 것이 더 좋다. `<p>` tag + CSS를 사용하면 문단간의 간격도 조절할 수 있다. 
 > `<p style="margin-top:48px;">`
+- `command`키를 누르면 여러개의 커서를 동시에 생성할 수 있다.
 
 ### Reference
 - https://en.wikipedia.org/wiki/HTML_element
