@@ -53,6 +53,7 @@
 * `<em>...</em>` or `<i>...</i>`: Italic
 * `<u>...</u>`: Underline
 
+
 ### List 
 * `<OL>...</OL>` / `<UL>...</UL>`: ordered list / unordered list
 	* `<LI>...</LI>`: list item
@@ -67,6 +68,15 @@
 * `<article>...</article>`: Used for articles and other similar content.
 * `<aside>...</aside>`: Used for content in a document which is separate from the main page content, for example, sidebars or advertising.
 * `<blockquote>...</blockquote>`: To indent them from both margins.
+
+
+### Link
+* `<a>...</a>`: anchor. 다른 웹페이지를 link
+	* attribiute `href`에 URL을 나타낸다. 
+	* attribiute `target="_blank"`는 새 탭이 열리게 해준다.
+	* attribiute `title = "html5 specification"` 마우스를 가져다 대면, 툴팁으로 html5 specification이 뜬다.
+	> e.g. `<a href="http://example.com#contents" target="_blank" title = "html5 specification">...</a>`
+
 
 ### Images
 * Image Prep
@@ -95,7 +105,7 @@
 - 웹 브라우저에서 `Cmd + O`로 바로 파일 열기를 할 수 있다. 
 - 사용 빈도가 높은 tag 위주로 익히기: https://www.advancedwebranking.com/html/ 
 - `<br/>` vs. `<p>...</p>`: paragraph임을 나타내는 `<p>` tag를 사용하는 것이 더 좋다. `<p>` tag + CSS를 사용하면 문단간의 간격도 조절할 수 있다. 
-> `<p style="margin-top:48px;">`
+    > `<p style="margin-top:48px;">`
 - `command`키를 누르면 여러개의 커서를 동시에 생성할 수 있다.
 
 ### Reference
