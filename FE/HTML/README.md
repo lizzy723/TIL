@@ -76,6 +76,7 @@
 	* attribiute `target="_blank"`는 새 탭이 열리게 해준다.
 	* attribiute `title = "html5 specification"` 마우스를 가져다 대면, 툴팁으로 html5 specification이 뜬다.
 	> e.g. `<a href="http://example.com#contents" target="_blank" title = "html5 specification">...</a>`
+* Link를 사용해서 Website가 완성되도록 하자.
 
 
 ### Images
