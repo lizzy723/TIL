@@ -85,6 +85,15 @@ function makeCoffee(parameter,...){
 ### Objects and Array
 * Objects: (1)properties(key(noun):value(adjective)), (2)subroutines(key(verb):value(set of instructions))를 가진다. 
   * `{key:value,...}`: literal way to create an object
+  * `object.member`/`object["member"]`: member access. subroutine의 경우 괄호 붙여주기(`object.member()`/`object['member']()`)
+  > `console.log()`도 console이라는 object의 log라는 subroutine을 사용하는 것이다. 
 * Arrays: list objects(즉, obejct의 한 종류). Each element is assigned a number. **It is iterable.** function도 element로 가질 수 있다. 
   * `[element,...]`: literal way to create an array.
+  * `array[0]`: **Computed** member access. 마찬가지로 subroutine의 경우 괄호 붙여주기. "Computed"의 의미는... `array[0]`과 `array[1+1-2]`의 결과는 동일하다.
 * object는 object/array를 property로 가질 수 있고, array 또한 element로 object를 가질 수 있다.  
+* `.`/`[]` syntax를 혼합해서 사용할 수 있다. 
+
+
+
+### Tips
+* `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.

@@ -30,9 +30,18 @@ var car={
     }
 };
 
+console.log(car.color); //member access
+console.log(car.engine.make) ;
+console.log(car.drive());
+
 var shoppinglist = [
     "Apple",
     "Orange",
     "pear", 
     function(){return "shopping";}
 ];
+
+var pointer = "color"
+console.log(car[pointer]);
+pointer = "speed"
+console.log(car[pointer]);
