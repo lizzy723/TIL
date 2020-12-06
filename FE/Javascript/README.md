@@ -80,6 +80,7 @@ function makeCoffee(parameter,...){
   * argument는 값
 
 * 그래서 please add this parameter 또는 Please pass in this argument하면 문맥상 바로 함수 이야기를 하는 것을 알 수 있다. 
+* Functions are callable objects. Callable objects are invoked by `()`.
 
 
 ### Objects and Array
@@ -87,13 +88,34 @@ function makeCoffee(parameter,...){
   * `{key:value,...}`: literal way to create an object
   * `object.member`/`object["member"]`: member access. subroutine의 경우 괄호 붙여주기(`object.member()`/`object['member']()`)
   > `console.log()`도 console이라는 object의 log라는 subroutine을 사용하는 것이다. 
+  * `object.member = value`를 통해서 기존 값을 변경하거나, 새로운 member를 추가할 수 있다. 
+  * `delete object.member`로 member를 지울 수 있다. 
 * Arrays: list objects(즉, obejct의 한 종류). Each element is assigned a number. **It is iterable.** function도 element로 가질 수 있다. 
   * `[element,...]`: literal way to create an array.
   * `array[0]`: **Computed** member access. 마찬가지로 subroutine의 경우 괄호 붙여주기. "Computed"의 의미는... `array[0]`과 `array[1+1-2]`의 결과는 동일하다.
+  * `array[] = value`를 통해서 기존 값을 변경할 수 있다.
+  * `array.length = value`를 통해서 마지막에 새로운 값을 추가할 수 있다. 여기서 length라는 property는 동적으로 변한다. 
+  * `array.shift()`: 첫번째 원소를 삭제하고, 삭제한 값을 return 한다. 
+  * `array.pop()`: 마지막 원소를 삭제하고, 삭제한 값을 return 한다. 
+  * `array.unshift("string", 3,...);`: array 앞부분에 element를 추가할 수 있다.
+  * `array.push(200,30,'string')`: array 마지막에 element(여러개)를 추가할 수 있다.
+  * `array.splice(index, # of elements to delete)`: 여러 원소를 삭제. 그리고 삭제한 원소를 반환한다.
+  * `array.splice(index, 0, "string", 200,...)`: 특정 위치에 원소를 추가할때도 사용할 수 있다.
+  * `array.splice(index, 2, "string", 200,...)`: 삭제와 추가 동시에도 가능하다.
+  
+  
 * object는 object/array를 property로 가질 수 있고, array 또한 element로 object를 가질 수 있다.  
-* `.`/`[]` syntax를 혼합해서 사용할 수 있다. 
+* `.`/`[]` syntax를 혼합해서 member acess에 사용할 수 있다. 
+
 
 
 
 ### Tips
 * `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.
+* **Memory hoisting**(=lift up): Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. JIT compiler는 code를 훑어보면서, syntax를 확인하고,
+variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-hoisting-94489559cfcf)
+> ```
+console.log(name);
+var name = 'Gourav'
+```
+의 결과는 `undefined`이다.
