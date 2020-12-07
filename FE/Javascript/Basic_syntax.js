@@ -45,3 +45,22 @@ var pointer = "color"
 console.log(car[pointer]);
 pointer = "speed"
 console.log(car[pointer]);
+
+//22. Inferred Globals & Scope
+var engine = {};
+
+function runExpression(){
+    var a = 10;
+
+    function add(){
+        engine = "New string"
+        //const engine = "New string"
+        //var engine = "New string"
+    }
+
+    add();
+}
+
+
+//add scope의 engine = "New string"은 function밖으로 나가 global variable에 할당된다.
+//따라서 local variable로 engine을 사용하고 싶다면 꼭 var 또는 const를 사용할 것!

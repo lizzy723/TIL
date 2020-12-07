@@ -114,8 +114,11 @@ function makeCoffee(parameter,...){
 * `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.
 * **Memory hoisting**(=lift up): Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. JIT compiler는 code를 훑어보면서, syntax를 확인하고,
 variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-hoisting-94489559cfcf)
-> ```
-console.log(name);
-var name = 'Gourav'
-```
-의 결과는 `undefined`이다.
+  > ```console.log(name);
+  var name = 'Gourav'
+  ```
+  의 결과는 `undefined`이다.
+
+* scope = access. And an object has a scope. 
+  * `window` object is a highest level object, and `window`'s properties globally accessable.
+  * 함수내에서 variable을 정의할때 var, const 쓰는 것을 잊으면 안된다. 그냥 (파이썬처럼) 할당하면 window object 내 즉, global variable을 계속 만드는 셈이다, 
