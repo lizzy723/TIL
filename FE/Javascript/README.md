@@ -108,6 +108,13 @@ function makeCoffee(parameter,...){
 * `.`/`[]` syntax를 혼합해서 member acess에 사용할 수 있다. 
 
 
+### This and Window
+* this는 context word. 즉, 문맥을 알아야 this가 무엇을 가리키는 지 알 수 있다.
+* default로 this는 window를 가리킨다.
+* 23장 다시 듣기
+
+### Constructor
+* function인데 (object의 )instance를 생성하는 function. 이경우 관습상 function의 이름을 대문자로 시작한다. 
 
 
 ### Tips

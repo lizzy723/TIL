@@ -64,3 +64,19 @@ function runExpression(){
 
 //add scope의 engine = "New string"은 function밖으로 나가 global variable에 할당된다.
 //따라서 local variable로 engine을 사용하고 싶다면 꼭 var 또는 const를 사용할 것!
+
+
+
+//24. Constructor
+function Apple(x, y, color, score){
+
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.score = score;
+
+};
+
+var apple1 = new Apple(10, 20, "red", 200);
+var apple2 = new Apple(10, 20, "green", 200);
+var apple3 = new Apple(10, 20, "pink", 200);
