@@ -80,7 +80,7 @@ function makeCoffee(parameter,...){
   * argument는 값
 
 * 그래서 please add this parameter 또는 Please pass in this argument하면 문맥상 바로 함수 이야기를 하는 것을 알 수 있다. 
-* Functions are callable objects. Callable objects are invoked by `()`.
+* Functions are callable **objects**. Callable objects are invoked by `()`. 즉, function도 obejct이다. 
 
 
 ### Objects and Array
@@ -113,9 +113,13 @@ function makeCoffee(parameter,...){
 * default로 this는 window를 가리킨다.
 * 23장 다시 듣기
 
-### Constructor
+### Constructor (function)
 * function인데 (object의 )instance를 생성하는 function. 이경우 관습상 function의 이름을 대문자로 시작한다. 
 
+### Prototype
+* python의 class level에 대한 이야기
+* prototype, constructor, object, and this 정리 필요하다.
+* constructor with prototype을 만들고, 이를 통해서 object를 생성한다. APPLE의 prototype은 eat(), throw()와 같은 method가 될 것이고, constructor로 만들어진 object는 고유의 property를 instance level에서 또 가지게 될 것이다. 
 
 ### Tips
 * `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.
