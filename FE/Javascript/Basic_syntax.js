@@ -80,3 +80,22 @@ function Apple(x, y, color, score){
 var apple1 = new Apple(10, 20, "red", 200);
 var apple2 = new Apple(10, 20, "green", 200);
 var apple3 = new Apple(10, 20, "pink", 200);
+
+
+// 28. if statements
+var carsleft =1,
+    carsright = 0,
+    greenMan = 'no';
+
+if (greenMan==='yes')
+{
+    console.log("cross the road.")
+}
+else if( carsleft===0 && carsright==0)
+{
+    console.log("All clear! Cross the road.")
+}
+else
+{
+    console.log("Stay where you are!")
+}

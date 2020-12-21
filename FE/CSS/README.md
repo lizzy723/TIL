@@ -1,5 +1,5 @@
 # CSS
-Hypertext Markup Language(https://en.wikipedia.org/wiki/HTML_element)
+Cascading Style Sheets (CSS) : 마크업 언어가 실제 **표시**되는 방법을 기술하는 언어
 
 ---
 
@@ -12,7 +12,7 @@ Hypertext Markup Language(https://en.wikipedia.org/wiki/HTML_element)
   - link tag로 css와 html을 연결/rel(relationship), href(css path)
   - 여기서도 style sheet는 먼저 등장하기때문에 각 tag안의 style attribute가 가장 높은 우선순위를 지닌다. 
 
-- syntax: `style=" : ;"
+- syntax: `style=" : ;"`
 - 파일 전체에 적용: <style> p{...} </style>
 - style rule은 top-down 방식으로 적용된다. 따라서 전역 style이 지정되어 있어도 부분별로 따로 스타일이 또 지정되어 있으면 부분 스타일을 적용한다. 
 

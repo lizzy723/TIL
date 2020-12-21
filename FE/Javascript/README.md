@@ -121,6 +121,35 @@ function makeCoffee(parameter,...){
 * prototype, constructor, object, and this 정리 필요하다.
 * constructor with prototype을 만들고, 이를 통해서 object를 생성한다. APPLE의 prototype은 eat(), throw()와 같은 method가 될 것이고, constructor로 만들어진 object는 고유의 property를 instance level에서 또 가지게 될 것이다. 
 
+### Comparison Operators
+* Always return boolean value(e.g. `true`, `false`)
+* `==`
+  > [주의] `NaN == NaN;`은 `false`를 반환한다.
+  * polymorphism
+  > `null == undefined;`은 `true`를 반환한다.
+  > `10 == "10";`은 `true`를 반환한다.
+* `===`: 값뿐만 아니라 data type도 확인한다. 
+  * `null === undefined;`은 `false`를 반환한다.
+  * `10 === "10";`은 `false`를 반환한다.  
+* `!=`, `!==`, `>`, `<`, `>=`, `<=`
+* `&&`이 `||`보다 우선순위가 높다.
+
+### if statement
+```
+if (condition)
+{
+  instructions
+}
+else if()
+{
+  instructions
+}
+else
+{
+  instructions
+}
+```
+
 ### Tips
 * `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.
 * **Memory hoisting**(=lift up): Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. JIT compiler는 code를 훑어보면서, syntax를 확인하고,
