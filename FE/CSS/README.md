@@ -1,13 +1,23 @@
-# CSS
-Cascading Style Sheets (CSS) : 마크업 언어가 실제 **표시**되는 방법을 기술하는 언어
+# CSS: Cascading Style Sheets 
+마크업 언어가 실제 **표시**되는 방법을 기술하는 언어
 
----
+## Table of contents
 
-## 1. CSS 사용방법
+1. [CSS 기본 syntax](#1-css-기본-syntax)
 
-방법1) style tag를 사용한다(head tag안에)
-방법2) 각 tag 안의 style attribute를 사용한다. 
-방법3) style sheet (웹 페이지가 막 100장 넘게 구성되어 있을때) --> css
+
+## 1. CSS 기본 syntax
+
+* 방법1) style tag를 사용한다 e.g. 아래 예시처럼 head tag안에 `<style></style>`태그로 a tag 안의 모든 글자를 빨강색으로 바꿀 수 있다.
+```
+<style>
+    a {
+        color:red;
+    }
+</style>
+```
+* 방법2) 각 tag 안의 style attribute를 사용한다. 
+* 방법3) style sheet (웹 페이지가 막 100장 넘게 구성되어 있을때) --> css
   - tag추가는 콤마로
   - link tag로 css와 html을 연결/rel(relationship), href(css path)
   - 여기서도 style sheet는 먼저 등장하기때문에 각 tag안의 style attribute가 가장 높은 우선순위를 지닌다. 
