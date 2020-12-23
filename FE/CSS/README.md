@@ -8,15 +8,16 @@
 
 ## 1. CSS 기본 syntax
 
-* 방법1) style tag를 사용한다 e.g. 아래 예시처럼 head tag안에 `<style></style>`태그로 a tag 안의 모든 글자를 빨강색으로 바꿀 수 있다.
+* 방법1) **style tag**를 사용한다 e.g. 아래 예시처럼 head tag안에 `<style></style>`태그로 a tag 안의 모든 글자를 빨강색으로 바꿀 수 있다.(여기서 `a`는 **selector**, `color:red;`는 **declaration(property:value)** 이라고 부른다)
 ```
 <style>
-    a {
+    a {   
         color:red;
+        text-decoration:none;
     }
 </style>
 ```
-* 방법2) 각 tag 안의 style attribute를 사용한다. 
+* 방법2) 각 tag 안의 **style attribute**를 사용한다. e.g. `<a style="color:red;">...</a>`
 * 방법3) style sheet (웹 페이지가 막 100장 넘게 구성되어 있을때) --> css
   - tag추가는 콤마로
   - link tag로 css와 html을 연결/rel(relationship), href(css path)
@@ -24,7 +25,7 @@
 
 - syntax: `style=" : ;"`
 - 파일 전체에 적용: <style> p{...} </style>
-- style rule은 top-down 방식으로 적용된다. 따라서 전역 style이 지정되어 있어도 부분별로 따로 스타일이 또 지정되어 있으면 부분 스타일을 적용한다. 
+- **style rule은 top-down 방식으로 적용된다.** 따라서 전역 style이 지정되어 있어도 부분별로 따로 스타일이 또 지정되어 있으면 부분 스타일을 적용한다. 
 
 ---
 

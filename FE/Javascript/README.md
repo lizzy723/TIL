@@ -149,6 +149,31 @@ else
   instructions
 }
 ```
+### For loop and for in loop
+* for loop
+```
+for (초기값;조건;조건이 참일때 실행)
+{
+  Do something
+}
+```
+* for in loop
+```
+for (using in 연산자)
+{
+  Do something
+}
+```
+
+### let
+* ES6 버젼에서 새로 등장한 문법
+```
+var symbolName = "value reference in memory"
+let letSymbol = "scoped value"
+const SymName = "constant value in memory"
+```
+* var은 global하게 존재하지만, let과 const는 if/for block(`{}`)과 같은 scope 내에만 존재한다.
+* c.f. function에서는 우리가 아는 것처럼 var도 행동한다. 
 
 ### Tips
 * `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.
@@ -162,3 +187,5 @@ variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-
 * scope = access. And an object has a scope. 
   * `window` object is a highest level object, and `window`'s properties globally accessable.
   * 함수내에서 variable을 정의할때 var, const 쓰는 것을 잊으면 안된다. 그냥 (파이썬처럼) 할당하면 window object 내 즉, global variable을 계속 만드는 셈이다, 
+
+* 주석처리 : //, /*...*/

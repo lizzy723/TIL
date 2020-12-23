@@ -99,3 +99,23 @@ else
 {
     console.log("Stay where you are!")
 }
+
+// 29. For loop
+var classRegister = ["Lawrence", "John", "Jeff"]
+
+for (var i = 0; i<classRegister.length; i++)
+{
+    console.log(classRegister[i])
+}
+
+//뒤에서 앞으로
+for (var i = classRegister.length-1; ㅑ>=0; i--)
+{
+    console.log(classRegister[i])
+}
+
+//for in loop
+for (var index in classRegister)
+{
+    console.log(classRegister[index])
+}
