@@ -66,5 +66,8 @@
   - css로도 attribute 수정 가능
   - div 내의 특정 부분만도 수정 가능
 
+## 6. 그 외 properties
+- text 정렬: `text-align:center;`
+
 
   - url(universe resource location)
