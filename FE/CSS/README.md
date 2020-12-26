@@ -60,6 +60,7 @@
 ## 5. advanced selectors
   - class와 id 개념으로 한번에 여러 tag attribute를 제어하자. 
     - class를 만들고, 이를 나타내기 위해 .(period)를 찍는다. 
+    - class는 여러개를 만들 수 있고 띄어쓰기로 구분한다. e.g. `class="group1 group2" ` --> `.group1{color:gray;}`,`.group2{color:red;}` (이렇게 따로 사용 가능) 
     - id를 만들고, 이를 나타내기 위해 #(pound)를 찍는다.  --> 한 id는 한 페이지에 딱 한번 쓸수있다. 
   - <span></span> tag를 사용하면 특정 부분만 수정 가능
   - <div></div>
