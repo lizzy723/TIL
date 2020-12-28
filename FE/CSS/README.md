@@ -4,32 +4,35 @@
 ## Table of contents
 
 1. [CSS 기본 syntax](#1-css-기본-syntax)
+2. [Declaration](#2-declaration)
+3. [Selector](#3-selector)
 
 
 ## 1. CSS 기본 syntax
 
-* 방법1) **style tag**를 사용한다 e.g. 아래 예시처럼 head tag안에 `<style></style>`태그로 a tag 안의 모든 글자를 빨강색으로 바꿀 수 있다.(여기서 `a`는 **selector**, `color:red;`는 **declaration(property:value)** 이라고 부른다)
-```
-<style>
-    a {   
-        color:red;
-        text-decoration:none;
-    }
+* 방법1) **style tag**를 사용한다 e.g. 아래 예시처럼 head tag안에 `<style></style>`태그를 입력하면, a tag 안의 모든 글자를 빨강색으로 바꿀 수 있다.(여기서 `a`는 **selector**, `color:red;`는 **declaration(property:value)** 이라고 부른다)
+```<style>
+a {   
+    color:red;
+    text-decoration:none;
+}
 </style>
 ```
-* 방법2) 각 tag 안의 **style attribute**를 사용한다. e.g. `<a style="color:red;">...</a>`
-* 방법3) style sheet (웹 페이지가 막 100장 넘게 구성되어 있을때) --> css
-  - tag추가는 콤마로
-  - link tag로 css와 html을 연결/rel(relationship), href(css path)
-  - 여기서도 style sheet는 먼저 등장하기때문에 각 tag안의 style attribute가 가장 높은 우선순위를 지닌다. 
 
-- syntax: `style=" : ;"`
-- 파일 전체에 적용: <style> p{...} </style>
-- **style rule은 top-down 방식으로 적용된다.** 따라서 전역 style이 지정되어 있어도 부분별로 따로 스타일이 또 지정되어 있으면 부분 스타일을 적용한다. 
+  - selector(tag) 추가시 delimiter는 comma(,)로 하기 e.g. `h1, h2 {}`
+  - declaration 구분자는 `;` 이다.
 
----
+* 방법2) 각 tag 안의 **style attribute**를 사용한다. 방법 1로 전체 설정을 한 후 특정 부분만 바꾸고 싶을때 이 방법을 사용한다. e.g. `<a style="color:red;">...</a>`
 
-## 2. font 수정
+* 방법3) (웹 페이지가 막 100장 넘게 구성되어 있을때) `style_sheet.css` 를 사용한다. .css 문서는 위의 style tag 내에 작성한 방법과 동일하게 작성하면 된다. 
+    - link tag로 css와 html을 연결한다. /rel(relationship), href(css path)
+    - style sheet는 가장 먼저 등장하기때문에 각 tag안의 style attribute가 가장 높은 우선순위를 지닌다. 
+
+
+## 2. Declaration
+각 declaration(prperty:value)의 효과를 정리해보자.
+
+### font 수정
 - 글자 크기: `style="font-size : small;"
   - medium(default), large, xx-small, x-small, small, x-large, xx-large 도 가능
   - in(inch), cm(centimeter), px(pixel)
@@ -40,8 +43,7 @@
 - 글자 모양: `style="font-family : Arial;"
   - 여러개를 입력해서 만약 특정 폰트가 없을경우 대체제를 넣어준다. 모든 사용자를 배려하기 위함
 
-
-## 3. 글자 색
+### 글자 색
   - `style="color : green;"
   - hex decimal : 0~9, A~F/FF = 256 e.g. #00FF00 는 green, #000000는 black
   - alpha: 0(transparent) ~ 1
@@ -49,26 +51,35 @@
   - 또는 "color : hsl(120,60%,60%);"로도 표현 가능
   - 일러스트 컬러 picker 이용하기
 
-
-## 4. list styles
+### list styles
   - 기존 attribute로 수정했던 내용들 CSS로도 똑같이 수정가능하다. 
   - OL: upper-alpha
   - UL: circle(unfilled dot), square
   - list-style-image:를 사용하면 원하는 그림을 사용할 수 있다. 
   - list-style-type: none으로 하면 방점은 사라진다. 
 
-## 5. advanced selectors
-  - class와 id 개념으로 한번에 여러 tag attribute를 제어하자. 
-    - class를 만들고, 이를 나타내기 위해 .(period)를 찍는다. 
-    - class는 여러개를 만들 수 있고 띄어쓰기로 구분한다. e.g. `class="group1 group2" ` --> `.group1{color:gray;}`,`.group2{color:red;}` (이렇게 따로 사용 가능) 
-    - id를 만들고, 이를 나타내기 위해 #(pound)를 찍는다.  --> 한 id는 한 페이지에 딱 한번 쓸수있다. 
+### 그 외 properties
+- text 정렬: `text-align:center;`
+
+## 3. Selector
+
+### advanced selectors
+**class**와 **id** 개념으로 한번에 여러 tag attribute를 제어하자.
+- class: tag내에 `class="saw"` 로 정의하고, `<style>` tag 내에 `.saw {color:gray;}`를 적으면 saw 클래스는 모두 회색으로 보인다.
+- class는 여러개를 만들 수 있고 띄어쓰기로 구분한다. e.g. `class="group1 group2" ` --> `.group1{color:gray;}`,`.group2{color:red;}` (이렇게 따로 사용 가능) 
+
+- id: tag내에 `id="active"` 로 정의하고,  `<style>` tag 내에 `#active {color:red;}`를 적으면 active id는 모두 빨간색으로 보인다. id는 class와의 위치와 상관없이(즉 id가 class보다 더 위에 선언되어 있어도) 더 높은 우선순위를 갖는다.
+- 한 id는 한 페이지에 딱 한번 쓸수있다. 
+
+- `tag selector` < `(.)class selector`< `(#)id selector` 순으로 우선순위를 가진다. id는 단 한번, class는 몇번, tag는 무한번 사용가능한 점에서 id, class, tag 순으로 중요도가 떨어진다고 볼 수 있다. 
+
+
   - <span></span> tag를 사용하면 특정 부분만 수정 가능
   - <div></div>
   - css로도 attribute 수정 가능
   - div 내의 특정 부분만도 수정 가능
 
-## 6. 그 외 properties
-- text 정렬: `text-align:center;`
 
 
-  - url(universe resource location)
+### Notes
+- **style rule은 top-down 방식으로 적용된다.** 따라서 전역 style이 지정되어 있어도 부분별로 따로 스타일이 또 지정되어 있으면 부분 스타일을 적용한다. 
