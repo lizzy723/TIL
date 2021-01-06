@@ -108,7 +108,10 @@
 - `<br/>` vs. `<p>...</p>`: paragraph임을 나타내는 `<p>` tag를 사용하는 것이 더 좋다. `<p>` tag + CSS를 사용하면 문단간의 간격도 조절할 수 있다. 
     > `<p style="margin-top:48px;">`
 - `command`키를 누르면 여러개의 커서를 동시에 생성할 수 있다.
+- tag와 element는 동일한 의미다. 
 - 동영상 삽입(`<iframe>`), 댓글기능 추가(DISQUS), 채팅기능 추가(https://www.tawk.to) 및 웹페이지 분석기 사용(e.g. google analytics)도 가능하다.
+- `<div>...</div>`는 이 부분의 특별한 의미는 없지만, 특정한 디자인(그리드)을 적용하기 위한 tag이다. 이는 block level의 tag이고, 같은 기능을 하지만 inline level의 tag인 `<span></span>`이 있다. cf. css readme box model 및 grid 부분 설명 참조
+- javascript 코드는 `<script>...javascript code...</script>>` tag를 활용한다. 
 
 ### Reference
 - https://en.wikipedia.org/wiki/HTML_element

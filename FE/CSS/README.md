@@ -6,6 +6,7 @@
 1. [CSS 기본 syntax](#1-css-기본-syntax)
 2. [Declaration](#2-declaration)
 3. [Selector](#3-selector)
+4. [Box model](#4-box-model)
 
 
 ## 1. CSS 기본 syntax
@@ -44,7 +45,7 @@ a {
   - 여러개를 입력해서 만약 특정 폰트가 없을경우 대체제를 넣어준다. 모든 사용자를 배려하기 위함
 
 ### 글자 색
-  - `style="color : green;"
+  - `style="color : green;"`
   - hex decimal : 0~9, A~F/FF = 256 e.g. #00FF00 는 green, #000000는 black
   - alpha: 0(transparent) ~ 1
   - 또는 "color : rgba(256,0,0,0.5);"로도 표현 가능
@@ -80,6 +81,49 @@ a {
   - div 내의 특정 부분만도 수정 가능
 
 
+## 4. Box model
+- 먼저 CSS를 이용해서 각 html tag의 범위를 알아보자. 
+  - **block level tag**: h1의 경우와 같이 화면 전체를 사용하는 html tag
+  - **inline tag**: link와 같이 자신의 크기만큼 부피를 차지하는 html tag
+  - `display:inline;` 또는 `display:block` declaration을 사용하면 block level tag를 inline으로 나타낼 수 있고, inline tag를 block으로 표현할 수 있다.
+  - cf. `display:none;`을 사용하면 tag 자체가 안 보인다. 
+> ```
+<style>
+  h1 {
+    border-width:5px;
+    border-color:red;
+    border-style:solid;
+  }
+</style>
+```
+
+- **padding**(박스 내 여백), **margin**(박스 사이 여백), **width**(박스 너비) property로 box의 범위를 변경해보자.
+> ```
+<style>
+    hl{
+      border:5px solid red;  <*이렇게 한줄에 쓸 수도 있다.*>
+      padding: 20px;
+      margin: 20px;
+      width:100px;
+    }
+</style>
+```
+- 그 외 박스와 관련된 declaration
+  - `border-bottom:1px solid grey;`: 박스 아래에 회색 선이 생긴다. `border-right`도 있다.
+
+
+## 5. Grid
+- 한 페이지에 병렬적으로 정보를 나타내고 싶을때
+```
+display:grid;
+grid-template-columns: 150px 1fr:
+```
+  - 여기서 `1fr`은 첫번째 컬럼에 150px을 할당하고 나머지 부분을 2번째 행으로 쓰겠다는 의미.
+  - 두 부분의 너비를 동일하게 하고 싶다면 `1fr 1fr`, 앞의 부분을 더 길게 하고 싶다면 `2fr 1fr` 로 작성하면 된다. 
+- https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout 참고하기
+
 
 ### Notes
 - **style rule은 top-down 방식으로 적용된다.** 따라서 전역 style이 지정되어 있어도 부분별로 따로 스타일이 또 지정되어 있으면 부분 스타일을 적용한다. 
+- box model과 관련된 더 많은 property는 "css box model" 키워드로 검색해보기.
+- caniuse.com에서 html/css/javascript의 각 브라우저 별로 기술 지원 여부를 확인할 수 있다.(e.g. grid 검색해보기)

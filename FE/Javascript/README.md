@@ -1,4 +1,11 @@
-### Primitive data
+# Javascript
+
+## Table of contents
+
+1. [Primitive data](#1-primitive-data)
+
+
+## 1. Primitive data
 
 1. String: Defined by quote e.g. `"hello"`
 2. Number: integer, floating point number
