@@ -21,6 +21,7 @@ a {
 ```
 
   - selector(tag) 추가시 delimiter는 comma(,)로 하기 e.g. `h1, h2 {}`
+  - delimiter로 space(' ')를 쓰고 두 selector를 쓰면 첫번째 selector내의 두번째 selector만 선택할 수 있다. e.g. `#grid ol{}` 는 grid라는 id 내의 ol tag에만 해당하는 부분이다. 
   - declaration 구분자는 `;` 이다.
 
 * 방법2) 각 tag 안의 **style attribute**를 사용한다. 방법 1로 전체 설정을 한 후 특정 부분만 바꾸고 싶을때 이 방법을 사용한다. e.g. `<a style="color:red;">...</a>`
@@ -98,6 +99,7 @@ a {
 ```
 
 - **padding**(박스 내 여백), **margin**(박스 사이 여백), **width**(박스 너비) property로 box의 범위를 변경해보자.
+- 브라우저의 개발자 도구를 사용해서 어느 부분에 수정이 필요한지 파악하자.
 > ```
 <style>
     hl{
@@ -121,6 +123,20 @@ grid-template-columns: 150px 1fr:
   - 여기서 `1fr`은 첫번째 컬럼에 150px을 할당하고 나머지 부분을 2번째 행으로 쓰겠다는 의미.
   - 두 부분의 너비를 동일하게 하고 싶다면 `1fr 1fr`, 앞의 부분을 더 길게 하고 싶다면 `2fr 1fr` 로 작성하면 된다. 
 - https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout 참고하기
+
+## 6. Responsive web design
+반응형 웹 디자인이란 하나의 웹사이트에서 PC, 스마트폰, 태블릿 PC 등 접속하는 디스플레이의 종류에 따라 화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법을 말한다.
+- 개발자 도구를 확인하면 현재 screen의 크기를 알 수 있다. 
+- 다음과 같이 미디어 쿼리를 사용하면 `800px>screen size`에서부터 display가 보이지 않는다. 
+- ```
+<style>
+    @media(min-width:800px){
+      div{
+        display:none;
+      }
+    }
+</style>
+```
 
 
 ### Notes

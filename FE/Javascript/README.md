@@ -3,47 +3,54 @@
 ## Table of contents
 
 1. [Primitive data](#1-primitive-data)
+2. [Variables, Constants & Assignment](#2-variables,-constants-&-assignment)
 
 
 ## 1. Primitive data
 
-1. String: Defined by quote e.g. `"hello"`
-2. Number: integer, floating point number
-3. Boolean: true, false
-4. null, undefined
+1. **String**: Defined by quote e.g. `"hello"`
+  * `"hello".length`하면 5를 반환한다. 
+  * `"hello".indexOf(o)`하면 4를 반환한다. 
+2. **Number**: integer, floating point number
+  * 연산관련: `Math.pow()`, `Math.round()`, `Math.ceil()`, `Math.floor()`, `Math.sqrt()`, `Math.random()`
+  * data type 확인: `typeof 1` 은 "number"반환한다.
+3. **Boolean**: `true`, `false` 
+4. **null**, **undefined**
   * null: `null` is an assignment value. It can be assigned to a variable as a representation of no value.
   * undefined: `undefined` means a variable has been declared but has **not yet been assigned a value**
-5. NaN: Not a Number 
+5. **NaN**: Not a Number 
 
-### Variables, Constants & Assignment
+## 2. Variables, Constants & Assignment
 
-1. Variable: var라는 박스를 만들고, name이라는 이름을 붙이고, "Lawrence"라는 값을 할당.
+1. **Variable**: var라는 박스를 만들고, name이라는 이름을 붙이고, "Lawrence"라는 값을 할당.
 	* name은 메모리 주소 대신 변수에 접근할 수 있는 방법.
 	* javascript is loosely data-typed. You can change variable type.
 ```
 var name = "Lawrence";
-name #Lawrence
+name //Lawrence
 name = "Turton";
-name #Turton
+name //Turton
 
 var blank;
-blank  #blank is an empty box.
+blank  //blank is an empty box.
 blank = "new value";
-blank
+blank  //new value
 blank = 100;
-blank
+blank  //100
+
+var a='coding', b='everybody';  //한번에 여러개의 변수 생성
 ```
 
-2. Constant: Always stay the same.
+2. **Constant**: Always stay the same.
 	* 무조건 초기값 필요.
 	* 절대 바꿀 수 없다. 
 ```
 const lastname = "turton";
-lastname #turton
-lastname = "lawrence" # error
+lastname //turton
+lastname = "lawrence" // error
 ```
 
-- window: variable(box)를 모두 확인할 수 있는 warehouse 같은 존재.
+3. **`window`**: 모든 variable(box)를 모두 확인할 수 있는 warehouse 같은 존재.
 
 ### Arithmetic Operator's & BODMAS
 - 숫자가 클수록 우선순위가 높다.  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
@@ -185,15 +192,38 @@ const SymName = "constant value in memory"
 ### DOM
 
 * DOM: Document Object Model
-* Document도 Window obejct의 내부 property obejct
+* Document는 Window obejct의 내부 property obejct
 * html document의 요소를 property로 가진다.
-* Dom is object representation of document.
+* Dom is object representation of document. 즉, javascript로 html을 제어할 수 있게된다. 
 
 * How to access html element
   * `document.getElementsByTagName('p')`: 모든 p(paragraph) element를 return(array 형태로) 한다. + `document.getElementByTagName()`, `document.getElementById()`, `document.getElementsByClassName()`, `document.querySelectorAll()`
 
+* Changing element's contents
+  * `console.dir(document.getElementById("Hello"));` Document object `document.getElementById("Hello")`의 속성을 알아보자
+  * `document.getElementById("Hello").innerText = 'new world';` inner text를 바꾸는 방법
+  * 같은 부분을 여러번 바꾸고 싶다면 변수로 할당 후 변수를 변경하면 된다.
+  ```
+  var pHello = document.getElementById('hello');
+  pHello.innerText = 'new world' 
+  pHello.innerText += ' order'
+  ```
+  * `.innerText`는 text 자체이지만, `.innerHTML`은 text를 html로 rendering한다. 즉, `pHello.innerText += "<span>hello world</span>"`와 같은 방법이 가능하다. (실제로 span tag가 생성됨)
+  * `.outerHTML`은 p tag를 다음과 같이 h2 tag로도 변경할 수 있다. `pHello.outerText += '<h2 id="hello">new world <span>hello world</span></h2>"`와 같은 방법이 가능하다.(원래는 h2가 아니고 p였다.)
+  * `document.querySelectorAll('h1 span')`은 object가 아닌 array를 반환한다. 따라서 변수로 정의할때 [0]을 마지막에 붙여 인덱싱하도록 하자. (e.g. `var spanh2 = document.querySelectorAll('h1 span')[0];`)
+
+* Changing element's style: CSS로 제어하던 style을 javascript로 제어해보자. CSS를 제어하는 것이 아니고, html tag내에 attribute를 추가하는 방법으로 style을 제어하는 것이다. 
+  ```
+  var el = document.getElementById('hello');
+  el.style.background = 'blue';
+  el.style.color = 'white';
+  el.style.width = "200px";
+  ```
+  * `el.style.cssText = "background:blue; color:white; width:200px;"` 이렇게 한줄로도 표현 가능하다. 그리고 `+=`를 이용해서 declaration 추가가 가능하다. 
+  * getComputedStyle(el): CSS로 제어된 결과를 보여준다. 
+
+
 ### Tips
-* `window`: 모든 변수 리스트를 확인할 수 있는 warehouse.
 * **Memory hoisting**(=lift up): Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. JIT compiler는 code를 훑어보면서, syntax를 확인하고,
 variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-hoisting-94489559cfcf)
   > ```console.log(name);
@@ -206,4 +236,7 @@ variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-
   * 함수내에서 variable을 정의할때 var, const 쓰는 것을 잊으면 안된다. 그냥 (파이썬처럼) 할당하면 window object 내 즉, global variable을 계속 만드는 셈이다, 
 
 * 주석처리 : //, /*...*/
+* `;`: 명령이 끝났다는 것을 명시하는 것. javascript에서는 쓰지 않아도 동작하긴 한다. 
 * `dir(obejct)`  가능 
+* `<script type="text/javascript"></script>` 는 언제나 body tag 제일 아래에 쓰도록! head에 써도 되지만 만약 javascript 파일이 매우 큰 경우 javascript 파일이 위에 있을수록 페이지 로딩이 느리게 된다. 
+
