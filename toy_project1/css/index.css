@@ -82,3 +82,18 @@ header .spot li a:hover {text-decoration: underline; }
 .blog .contents .blog_contents {text-align: left; padding-right: 28px; width:156px; font-size:14px; line-height:28px}
 .blog .contents a:hover h3,
 .blog .contents a:hover .blog_contents {text-decoration: underline;}
+
+/* youtube */
+.youtube {height:462px; text-align: center;}
+
+.youtube .prev {left:50%; margin-left:-660px; width:20px; height:36px; background-position: -337px -676px;}
+.youtube .next {right:50%; margin-right:-660px; width:20px; height:36px; background-position: -407px -676px;}
+
+.youtube .control li a {background:#dde0df;}
+.youtube .control li .on {background:#2d5b78;}
+
+.youtube h2 {font-size: 28px; color:#000; padding:50px 0px 43px; }
+
+.youtube .contents .example {display: inline-block;}
+.youtube .contents a {display: block; margin:0px 8px;}
+.youtube .contents h3 {padding:20px 18px 0px; font-size:15px; width:234px;}
