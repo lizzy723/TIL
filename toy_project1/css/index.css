@@ -1,4 +1,6 @@
-header {height: 81px; text-align: center;}
+body {min-width: 1280px;}
+
+header {height: 81px; text-align: center; position:relative;}
 
 header h1 {position:absolute; left:50px; top:0; padding:14px 0 0;}
 header h1 a {display:block; width:110px; height:48px; color:transparent;background:url(../image/sp_com.png) no-repeat -300px 0;} 
@@ -17,3 +19,23 @@ header .spot li:last-child a {padding-right:0px;}
 header .spot li:first-child:after {display:none;}
 header .spot li a:hover {text-decoration: underline; }
 
+.visual {position: relative; padding:0 50px;}
+.visual .contents .slide {height: 690px; background:url(../image/bg_main00.jpg) no-repeat center;}
+.visual .contents .slide .text {position: absolute; font-size: 46px; color:#fff; font-weight: lighter; left:50%; top:50%; transform:translateX(-50%) translateY(-50%);}
+.visual .contents .slide .text span {font-size:23px;}
+
+.visual .prev,
+.visual .next {display:block; position:absolute; top:50%; transform:translateY(-50%); color:transparent; background:url(../image/sp_com.png) no-repeat; width:24px; height:46px;}
+.visual .prev {left:82px; background-position: -125px -60px;}
+.visual .next {right:82px; background-position: -159px -60px;}
+
+.visual .control{position: absolute; left:0; bottom:55px; width:100%; text-align: center;}
+.visual .control > *, 
+.visual .control li {display: inline-block; }
+.visual .control li a {overflow:hidden; display: block; width:50px; height:3px; background:rgba(255,255,255, 0.5); color:transparent; margin:0px 2px 3px;}
+.visual .control li .on {background:#fff;}
+.visual .control > div {margin-left: 20px;}
+.visual .control > div a {overflow:hidden; display:inline-block; color:transparent; background:url(../image/sp_com.png) no-repeat;margin-left: 7px; opacity:0.5; }
+.visual .control > div .on {opacity:1;}
+.visual .control > div .play {width:7px; height: 9px; background-position: -108px -72px;}
+.visual .control > div .pause {width:9px; height: 9px; background-position: -108px -60px;}
