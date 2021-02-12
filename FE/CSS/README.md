@@ -57,6 +57,7 @@
     * 포토샵(또는 일러스트) 컬러 picker 이용해서 확인하자.
 * **`text-align`**: 글자 배열 정렬 e.g. `style="text-align:center;"`
 * **`text-decoration`**:밑줄 만들고 없애기 e.g. `text-decoration:none;`(밑줄 없애기), `text-decoration:underline;`(밑줄 만들기)
+* **`line-height`**: 줄 간격(글씨 크기와는 다른 개념). 제일 아래부터 위까지의 높이. 기본적으로 줄 간격이 어느정도 있으니 초기화하고 싶다면 100%로 설정하기.
 
 
 
