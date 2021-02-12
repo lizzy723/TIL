@@ -39,3 +39,20 @@ header .spot li a:hover {text-decoration: underline; }
 .visual .control > div .on {opacity:1;}
 .visual .control > div .play {width:7px; height: 9px; background-position: -108px -72px;}
 .visual .control > div .pause {width:9px; height: 9px; background-position: -108px -60px;}
+
+.product {text-align: center;}
+.product li {display:inline-block; font-size: 14px; margin:46px 53px 41px;}
+.product a:hover {color:#017cc3; font-weight: bold;}
+.product a::before {display: block; content: ""; background: url("../image/sp_com.png") no-repeat; width:64px; height: 52px; margin-bottom: 27px;}
+.product li:nth-child(1) a::before {background-position: -3px -119px;}
+.product li:nth-child(2) a::before {background-position: -76px -119px;}
+.product li:nth-child(3) a::before {background-position: -147px -119px;}
+.product li:nth-child(4) a::before {background-position: -218px -119px;}
+.product li:nth-child(5) a::before {background-position: -291px -119px;}
+.product li:nth-child(6) a::before {background-position: -362px -119px;}
+.product li:nth-child(1) a:hover::before {background-position: -3px -184px;}
+.product li:nth-child(2) a:hover::before {background-position: -76px -184px;}
+.product li:nth-child(3) a:hover::before {background-position: -147px -184px;}
+.product li:nth-child(4) a:hover::before {background-position: -218px -184px;}
+.product li:nth-child(5) a:hover::before {background-position: -291px -184px;}
+.product li:nth-child(6) a:hover::before {background-position: -362px -184px;}
