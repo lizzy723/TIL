@@ -1,5 +1,6 @@
 body {min-width: 1280px;}
 
+/* header */
 header {height: 81px; text-align: center; position:relative;}
 
 header h1 {position:absolute; left:50px; top:0; padding:14px 0 0;}
@@ -19,27 +20,31 @@ header .spot li:last-child a {padding-right:0px;}
 header .spot li:first-child:after {display:none;}
 header .spot li a:hover {text-decoration: underline; }
 
-.visual {position: relative; padding:0 50px;}
+/* visual */
+.visual {margin:0 50px;}
 .visual .contents .slide {height: 690px; background:url(../image/bg_main00.jpg) no-repeat center;}
 .visual .contents .slide .text {position: absolute; font-size: 46px; color:#fff; font-weight: lighter; left:50%; top:50%; transform:translateX(-50%) translateY(-50%);}
 .visual .contents .slide .text span {font-size:23px;}
 
-.visual .prev,
-.visual .next {display:block; position:absolute; top:50%; transform:translateY(-50%); color:transparent; background:url(../image/sp_com.png) no-repeat; width:24px; height:46px;}
-.visual .prev {left:82px; background-position: -125px -60px;}
-.visual .next {right:82px; background-position: -159px -60px;}
+/* slider */
+.slider {position: relative;}
+.slider .prev,
+.slider .next {display:block; position:absolute; top:50%; transform:translateY(-50%); color:transparent; background:url(../image/sp_com.png) no-repeat; width:24px; height:46px;}
+.slider .prev {left:32px; background-position: -127px -60px;}
+.slider .next {right:32px; background-position: -159px -60px;}
 
-.visual .control{position: absolute; left:0; bottom:55px; width:100%; text-align: center;}
-.visual .control > *, 
-.visual .control li {display: inline-block; }
-.visual .control li a {overflow:hidden; display: block; width:50px; height:3px; background:rgba(255,255,255, 0.5); color:transparent; margin:0px 2px 3px;}
-.visual .control li .on {background:#fff;}
-.visual .control > div {margin-left: 20px;}
-.visual .control > div a {overflow:hidden; display:inline-block; color:transparent; background:url(../image/sp_com.png) no-repeat;margin-left: 7px; opacity:0.5; }
-.visual .control > div .on {opacity:1;}
-.visual .control > div .play {width:7px; height: 9px; background-position: -108px -72px;}
-.visual .control > div .pause {width:9px; height: 9px; background-position: -108px -60px;}
+.slider .control{position: absolute; left:0; bottom:55px; width:100%; text-align: center;}
+.slider .control > *, 
+.slider .control li {display: inline-block; }
+.slider .control li a {overflow:hidden; display: block; width:50px; height:3px; background:rgba(255,255,255, 0.5); color:transparent; margin:0px 2px 3px;}
+.slider .control li .on {background:#fff;}
+.slider .control > div {margin-left: 20px;}
+.slider .control > div a {overflow:hidden; display:inline-block; color:transparent; background:url(../image/sp_com.png) no-repeat;margin-left: 7px; opacity:0.5; }
+.slider .control > div .on {opacity:1;}
+.slider .control > div .play {width:7px; height: 9px; background-position: -108px -72px;}
+.slider .control > div .pause {width:9px; height: 9px; background-position: -108px -60px;}
 
+/* product */
 .product {text-align: center;}
 .product li {display:inline-block; font-size: 14px; margin:46px 53px 41px;}
 .product a:hover {color:#017cc3; font-weight: bold;}
@@ -56,3 +61,24 @@ header .spot li a:hover {text-decoration: underline; }
 .product li:nth-child(4) a:hover::before {background-position: -218px -184px;}
 .product li:nth-child(5) a:hover::before {background-position: -291px -184px;}
 .product li:nth-child(6) a:hover::before {background-position: -362px -184px;}
+
+/* blog */
+.blog {height: 768px; background:#f2f0ec; text-align: center;}
+
+.blog .prev {left:50%; margin-left:-660px; width:20px; height:36px; background-position: -337px -676px;}
+.blog .next {right:50%; margin-right:-660px; width:20px; height:36px; background-position: -407px -676px;}
+
+.blog .control li a {background:#dde0df;}
+.blog .control li .on {background:#2d5b78;}
+
+.blog h2 {font-size: 28px; color:#000; padding:50px; }
+
+.blog .contents .example {display: inline-block;}
+.blog .contents a {display: block; margin:0px 8px;}
+.blog .contents .blog_text {width: 280px; height: 250px; background:#fff;}
+.blog .contents h3 {padding:30px 28px 0px; height: 54px; font-size:16px; text-align: left;}
+.blog .contents .blog_text .lower_part {display:flex;}
+.blog .contents .blog_subject {text-align: left; padding-left: 28px; width:67px; font-size:13px; font-weight: bold; line-height: 26px;}
+.blog .contents .blog_contents {text-align: left; padding-right: 28px; width:156px; font-size:14px; line-height:28px}
+.blog .contents a:hover h3,
+.blog .contents a:hover .blog_contents {text-decoration: underline;}
