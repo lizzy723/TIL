@@ -129,3 +129,34 @@ header .spot li a:hover {text-decoration: underline; }
 .notice .notice_news li {font-size:14px; text-align:left}
 .notice .notice_news li p {font-size:12px; color:#939393; position:absolute; bottom:14px; }
 .notice .notice_news a:hover {text-decoration: underline;}
+
+/* footer */
+footer .top, footer .bottom{padding:0px 210px 0px 210px}
+footer .top {background-color: #373f43; height:70px}
+footer .top ul {float:left}
+footer .top li{display:inline-block; position: relative;}
+footer .top li a{display: block; height:70px; line-height: 70px;color:#fff; margin:0px 8px}
+footer .top li::after {display: block; content:""; position:absolute; left:0; top:50%; width:1px; height:8px; background: #ccc; transform:translateY(-50%)}
+footer .top li:first-child:after {display:none;}
+footer .top li:first-child a{margin-left:0px}
+
+footer .top > div {float:right; width:510px}
+footer .top > div > div {float:left;color:#fff; text-align:center; font-size:14px; width:304px;height:41px; margin:12px 0px 10px 0px; background-color: #293133; padding-top: 7px;} 
+footer .top > div > div p {font-size:10px}
+footer .top > div > select {float:right; width:200px; height:45px; border-radius: 0px; margin:12px 0px 10px 0px; text-indent: 21px; border:none;} 
+
+footer .bottom {background-color: #4c5458; height:210px; position:relative}
+footer .bottom > div {float:left; color:#fff}
+footer .bottom > div p {color:transparent; width:130px;height:26px; background:url(../image/sp_com.png) no-repeat -150px 0px; margin:38px 0px 20px}
+
+footer .bottom > div li{display:inline-block; margin:12px 8px; position: relative}
+footer .bottom > div li:first-child::after {display:block; content:""; position:absolute; right:-10px; top:50%; width:1px; height:8px; background: #ccc; transform:translateY(-50%) }
+footer .bottom > div li:first-child {margin-left:0px;}
+footer .bottom > ul {float:right}
+
+footer .bottom > ul{position: absolute; bottom : 90px; right:210px} 
+footer .bottom > ul li{display:inline-block; margin-left: 11px}
+footer .bottom > ul li a{display:block; width:46px; height:45px; overflow:hidden; color:transparent; background: url(../image/sp_com.png) no-repeat #373f43;}
+footer .bottom > ul li:nth-child(1) a {background-position: -318px -605px;}
+footer .bottom > ul li:nth-child(2) a {background-position: -365px -605px;}
+footer .bottom > ul li:nth-child(3) a {background-position: -413px -605px;}
