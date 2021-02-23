@@ -13,7 +13,7 @@
 9. [Inheritance](#9-inheritance)
 10. [Javascript in html](#9-javascript-in-html)
 11. [Regular expression in JS](#10-regular-expression-in-js)
-
+12. [Notes](#12-notes)
 
 ## 1. Primitive data
 
@@ -458,8 +458,9 @@
 ## 7. Objects and Array
 1. Objects
   * object의 특성
-    * (1)properties(key(noun):value(adjective)), (2)subroutines 또는 method(key(verb):value(set of instructions))를 가진다. 
+    * (1)**properties**(key(noun):value(adjective)), (2)**method**(=객체의 property로 할당된 함수)(key(verb):value(set of instructions))를 가진다. 
     * **It is iterable.** --> 반복문에서 사용가능
+    * key는 반드시 string이어야 한다. 
   * object 생성하기
     * `var object = {key:value,...};`: literal way to create an object. 아래와 같은 방법도 가능. 
     ```
@@ -854,7 +855,8 @@ document.body.inserBefore(element, target)  //target 앞에 element를 넣겠다
 
 * `document.write('coding everybody <br />')`: html body text를 생성한다.
 
-### Tips
+## 12. Notes
+* 주석처리 : `//`, `/*...*/`
 * **Memory hoisting**(=lift up): Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution. JIT compiler는 code를 훑어보면서, syntax를 확인하고,
 variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-hoisting-94489559cfcf)
   > ```console.log(name);
@@ -863,7 +865,7 @@ variable name만 lift up한다. (https://medium.com/@gourav_m/javascript-memory-
   의 결과는 `undefined`이다.
 
 
-* 주석처리 : `//`, `/*...*/`
+
 * `;`: 명령이 끝났다는 것을 명시하는 것. javascript에서는 쓰지 않아도 동작하긴 한다. 
 * `dir(obejct)`  가능 
 * `<script type="text/javascript"></script>` 는 언제나 body tag 제일 아래에 쓰도록! head에 써도 되지만 만약 javascript 파일이 매우 큰 경우 javascript 파일이 위에 있을수록 페이지 로딩이 느리게 된다. 
