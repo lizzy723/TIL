@@ -29,6 +29,16 @@
     * null: `null` is an assignment value. It can be **assigned** to a variable as a representation of no value.
     * undefined: `undefined` means a variable has been declared but has **not yet been assigned a value**
 5. **NaN**: Not a Number 
+6. 이와 같은 primitive data type은 object는 아니다. 하지만 primitive data type을 객체처럼 다룰 수 있도록 하기 위한 객체를 자바스크립트에서는 제공한다. 이를 **wrapper object**라고 한다. 따라서 아래의 예처럼 String은 object는 아니지만 wrapper obejct 덕분에 obejct처럼 행동할 수 있다. Number, String, Boolean이라는 wrapper obejct가 존재하고 다만 null, undefined는 이러한 wrapper object가 존재하지 않는다. 
+  ```
+  var str = 'coding'
+  //str = new String('coding') 아래 object access operator를 사용하기 위해 wrapper obejct가 생성됨. 
+  console.log(str.length); //6 -> 마치 객체와 같이 행동한다.
+  console.log(str.charAt(0)); //"C" -> 마치 객체와 같이 행동한다.
+
+  str.prop = 'everybody' //그러나 이런 것은 안된다. 에러는 뜨지 않지만 property를 추가할 수는 없다. 
+  console.log(str.prop); //undefined
+  ```
 
 ## 2. Variables, Constants & Assignment
 
@@ -71,7 +81,27 @@
   func()
   window.func() //사실 func()는 window의 property인 func()를 실행하는 것이다. 
   ```
-
+4. 복제와 참조
+* **복제(copy)**: copy는 primitive data type일때만 가능하다. 
+  ```
+  var a = 1;
+  var b = a;
+  b = 2;
+  console.log(a) //1
+  ```
+* **참조(reference)**: primitive data type이 아닌 다른 데이터 타입에서는 복제가 불가능하다. a,b라는 변수의 이름은 변수 포인터(바로가기와 같은 개념)에 해당하고, 특정 객체가 위치하는 위치를 가르킨다. 
+  ```
+  var a = {'id':1}
+  var b = a
+  b.id = 2
+  console.log(a.id) //2
+  ```
+  ```
+  var a = {'id':1}
+  var b = a
+  b.id = {'id':2}
+  console.log(a.id) //1
+  ```
 
 
 ## 3. Arithmetic Operator's & BODMAS
@@ -207,6 +237,33 @@
   ```
   var sum = new Function('x', 'y', 'return x+y;')
   ```
+  * 복제와 참조 유의하기(call by value vs. call by reference)
+    * primitive data type을 인자로 넘겼을때
+    ```
+    var a = 1;
+    function func(b){
+      b = 2;
+    }
+    func(a);
+    console.log(a) //1
+    ```
+    * 참조 데이터 타입을 인자로 넘겼을때 
+    ```
+    var a = {'id':1}
+    function func(b){
+      b = {'id':2}
+    }
+    func(a);
+    console.log(a.id) //1
+    ```
+    ```
+    var a = {'id':1}
+    function func(b){
+      b.id = 2
+    }
+    func(a);
+    console.log(a.id) //2
+    ```
 2. Scope(유효범위)
   * scope = access. And an object has a scope. 
   * 지역변수와 전역변수: 지역변수는 함수내에서만 사용가능하지만 전역변수는 어디에서나 사용가능하다. 그러나 함수내에서는 지역변수가 전역변수보다 더 우선시된다. 
@@ -398,8 +455,6 @@
 
 
 
-
-
 ## 7. Objects and Array
 1. Objects
   * object의 특성
@@ -484,6 +539,7 @@
 
 
 
+
 ## 8. prototype
 1. Constructor(생성자): 객체를 만드는 역할을 하는 함수. 즉 instance를 생성하는 함수. 관습상 function의 이름을 대문자로 시작한다. 
   * new operator와 함께 변수를 정의하면 객체가 생성된다.
@@ -559,21 +615,21 @@
   func.apply(p) //p
   ```
 3. Prototype
-* 지금까지의 설명대로 constructor with prototype을 만드는 것은 object를 생성하는 constructor에 **원형(주물, prototype)**을 넣어두는 것과 같다. 따라서 constructor로 object를 생성하면 **prototype의 형태(원형의 형태)**의 객체가 만들어지는 것이다. 아래와 같은 예시를 prototype chain이라고 한다.
-```
-function Ultra(){}
-Ultra.prototype.ultraProp= true;
+  * 지금까지의 설명대로 constructor with prototype을 만드는 것은 object를 생성하는 constructor에 **원형(주물, prototype)**을 넣어두는 것과 같다. 따라서 constructor로 object를 생성하면 **prototype의 형태(원형의 형태)**의 객체가 만들어지는 것이다. 아래와 같은 예시를 prototype chain이라고 한다.
+  ```
+  function Ultra(){}
+  Ultra.prototype.ultraProp= true;
 
-function Super(){}
-Super.prototype = new Ultra();
+  function Super(){}
+  Super.prototype = new Ultra();
 
-function Sub(){};
-Sub.prototype = new Super();
+  function Sub(){};
+  Sub.prototype = new Super();
 
-var o = new Sub();
-console.log(o.ultraProp);
-```
-* 조금 더 공부하기. 
+  var o = new Sub();
+  console.log(o.ultraProp);
+  ```
+
 
 
 ## 9. Inheritance 
@@ -611,7 +667,67 @@ var p2 = new Programmer('egoing');
 document.write(p2.coding() + '<br/>');
 ```
 
-## 10. javascript in html
+
+## 10. Standard built-in object
+* Object, Function, Array, String, Boolean, Number, Math, Date, RegExp
+* 표준 내장 객체 `Array`에 사용자가 임의의 method 추가하는 것이 가능하다. 
+```
+#function getRandomValue(arr){
+#  var index = Math.floor(arr.length*Math.random());
+#  return arr[index];
+#}
+Array.prototype.getRandomValue = function(){
+  var index = Math.floor(this.length*Math.random());
+  return this[index];
+}
+var arr = new Array('seoul', 'new york', 'ladarkh', 'pusan', 'Tsukuba');
+console.log(arr.getRandomValue());
+```
+1. object
+  * 내장 object인 obejct를 알아보자. 모든 obejct는 이 obejct의 모든 속성을 inherit받는다. 
+  * obejct methods에서 prototype이 있는 것과 없는 것의 차이는? 없는 것은 Obejct(생성자 함수) 자체의 method이고, prototype이 있는 것은 상속받은 모든 obejct가 이러한 method를 가지게 된다. 
+  ```
+  //Object.keys()
+  var arr = ["a", "b", "c"];
+  console.log(Object.keys(arr))  //Obejct라는 생성자 함수는 객체이므로 함수를 가질 수 있다. keys라는 함수를 이용해서 특정 arr이라는 object의 키 값을 반환하겠다. 
+
+  //Object.prototype.toString()
+  var o = new Obejct();
+  console.log(o,toString());
+
+  var a = new Arrary(1,2,3);
+  console.log(a.toString());
+  ```
+  * 다른 method 참조: https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object
+  * 사용자가 직접 method를 추가할 수 있다. 그러나 이 방법은 실제로는 사용하지 않는 것이 좋다. 
+  ```
+  Obejct.prototype.contain = function(needle){
+    for (var name in this){
+      if (this[name] === needle){
+        return true;
+      }
+    }
+    return false;
+  }
+  var o = {'name':'egoing', 'city':'seoul'};
+  console.log(o.contain('egoing')); //true
+  ```
+  ```
+  //이렇게 할 경우 우리가 원하는 결과가 나오지 않는다. contain도 같이 출력된다. 
+  for (var name in o){
+    console.log(name)
+  }
+  //hasOwnProperty()함수를 써야한다.
+  for (var name in o){
+    if (o.hasOwnProperty(name)){
+      console.log(name);
+    }
+  }
+  ```
+
+
+
+## 11. javascript in html
 * `<script>...</script>`: 직접 tag사이에 써도 되지만, 
   > ```
   <script>
@@ -622,7 +738,7 @@ document.write(p2.coding() + '<br/>');
 * javascript 파일이 클수록 html 문서 마지막에 loading하기. 그래야 페이지 rendering이 다소 빨리 진행되는 것처럼 느껴진다. + `console.log()`로 내용 다 log 하기
 
 
-## 11. Regular expression in JS
+## 12. Regular expression in JS
 * 정규 표현식은 **컴파일(compile)**과 **실행(execution)** 두 단계로 이루어진다. 
 
 1. 컴파일(compile)
