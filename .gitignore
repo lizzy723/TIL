@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +128,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+=======
+Python/2018_2_모두를 위한 파이썬 프로그래밍/
+Python/(부록) Python Programming/
+FE/course material/
+.DS_Store
+*-checkpoint.ipynb
+>>>>>>> Programming_language/master

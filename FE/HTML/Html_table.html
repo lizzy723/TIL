@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Table</title>
+		<style>
+			table, td, th{
+				border:1px solid red; /*border-width, border-line, border-color*/
+			}
+			table{
+				width:500px;
+				height:500px;
+				border-spacing:0px;  /*테이블처럼 보이게 한다*/
+			}
+			.small-column{
+				width:50px;
+			}
+			thead{
+				background-color: lightblue;
+			}
+			td{
+				text-align: right;
+				vertical-align: bottom;
+				padding: 30px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<table>
+			<caption>Table title</caption>
+			<thead>
+				<tr>
+					<th>tag</th>
+					<th>proportion</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>head</td>
+				<td class="small-column">98.1%</td>
+			</tr>
+			<tr>
+				<td>body</td>
+				<td>97.9%</td>
+			</tr>
+			<tr>
+				<td>html</td>
+				<td>97.9%</td>
+			</tr>
+		</table>
+	</body>
+</html>
