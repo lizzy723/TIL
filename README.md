@@ -2,7 +2,9 @@
 
 
 <details close>
-<summary>C, Cpp</summary>
+<summary>git</summary>
+  * [git 이란?](https://github.com/lizzy723/TIL/blob/main/Git/what_is_git.md)
+
 </details>
 
 <details close>
