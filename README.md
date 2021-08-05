@@ -2,8 +2,10 @@
 
 
 <details close>
-<summary>git</summary>
-  * [git 이란?](https://github.com/lizzy723/TIL/blob/main/Git/what_is_git.md)
+<summary>Git</summary><br>
+ 
+* [Git이란 무엇인가?](https://github.com/lizzy723/TIL/blob/main/Git/what_is_git.md)
+
 
 </details>
 
@@ -23,7 +25,7 @@
 * [Class.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/Class.ipynb)
 * [OOP.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/OOP.ipynb)
 * [Module.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/Module.ipynb)
-* [Regular_expression](https://github.com/lizzy723/TIL/blob/main/Python/regular_expression.ipynb)
+* [Regular_expression.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/regular_expression.ipynb)
 
     </details>
     <details close>
