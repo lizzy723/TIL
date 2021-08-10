@@ -7,6 +7,7 @@
 * [Git이란 무엇인가?](https://github.com/lizzy723/TIL/blob/main/Git/what_is_git.md)
 * [[Step1] 버전 관리](https://github.com/lizzy723/TIL/blob/main/Git/Step1_version_control.md)
 * [[Step2] 백업](https://github.com/lizzy723/TIL/blob/main/Git/Step2_back_up.md)
+* [[Step3] branch & Conflict](https://github.com/lizzy723/TIL/blob/main/Git/Step3_branch_and_conflict.md)
 
 
 </details>
