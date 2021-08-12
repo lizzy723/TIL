@@ -9,6 +9,7 @@
 * [[Step2] 백업](https://github.com/lizzy723/TIL/blob/main/Git/Step2_back_up.md)
 * [[Step3] branch & Conflict](https://github.com/lizzy723/TIL/blob/main/Git/Step3_branch_and_conflict.md)
 * [[Step4] collaborate](https://github.com/lizzy723/TIL/blob/main/Git/Step4_collaborate.md)
+* [[Step5] Cherry pick and rebase](https://github.com/lizzy723/TIL/blob/main/Git/Step5_cherry_pick_and_rebase.md)
 
 
 </details>
