@@ -18,11 +18,12 @@
 ---
 
 ### B. 리눅스 시스템
-1. 리눅스와 파일
+1. 리눅스와 파일<br>
     * 모든 것은 파일이라는 철학을 따름.
     * 파일 네임스페이스: 전역 네임스페이스를 제공(루트 디렉토리로부터 시작)<br>
     cf. 윈도우는 C:/media, A:/ 등 드라이브별로 분류되어 있음
     * 파일은 inode 고유값과 자료구조애 의해 주요 정보 관리
+    <img width="400" alt="Screen Shot 2021-08-13 at 3 13 46 PM" src="https://user-images.githubusercontent.com/43725183/129313090-fea493be-3597-47c2-8ad7-9faaf1d33866.png">
  
 2. 리눅스와 프로세스
     * 리눅스 실행 파일 포맷-ELF(Executable and Linkable Format): 콜스택, 코드(텍스트), 데이터 및 BSS 섹션 등
