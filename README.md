@@ -16,9 +16,10 @@
 <details close>
  <summary>Linux</summary><br>
 
-* [리눅스란?]()
+* [리눅스란?](https://github.com/lizzy723/TIL/blob/main/Linux/What_is_Linux.md)
 * [Linux folder system]()
 * [Linux text editor-Vim]()
+* [Linux text editor-Nano]()
 * [[shell commands] 다중 사용자 관련 명령어]()
 * [[shell commands] 파일 및 권한 관련 명령어]()
 
