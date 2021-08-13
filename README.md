@@ -11,7 +11,16 @@
 * [[Step4] collaborate](https://github.com/lizzy723/TIL/blob/main/Git/Step4_collaborate.md)
 * [[Step5] Cherry pick and rebase](https://github.com/lizzy723/TIL/blob/main/Git/Step5_cherry_pick_and_rebase.md)
 * [Github란 무엇인가?](https://github.com/lizzy723/TIL/blob/main/Git/What_is_github.md)
+</details>
 
+<details close>
+ <summary>Linux</summary><br>
+
+* [리눅스란?]()
+* [Linux folder system]()
+* [Linux text editor-Vim]()
+* [[shell commands] 다중 사용자 관련 명령어]()
+* [[shell commands] 파일 및 권한 관련 명령어]()
 
 </details>
 
