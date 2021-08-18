@@ -23,6 +23,7 @@
 * [[shell commands] 다중 사용자 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_multi_user.md)
 * [[shell commands] 파일 및 권한 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_file_and_permission.md)
 * [[shell commands] 표준입출력 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_redirection_and_pipe.md)
+* [[shell commands] 리눅스 프로세스 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_linux_process.md)
 
 </details>
 
