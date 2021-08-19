@@ -17,7 +17,6 @@
  <summary>Linux</summary><br>
 
 * [리눅스란?](https://github.com/lizzy723/TIL/blob/main/Linux/What_is_Linux.md)
-* [Linux folder system]()
 * [Linux text editor-Vim]()
 * [Linux text editor-Nano](https://github.com/lizzy723/TIL/blob/main/Linux/Linux_text_editor_Nano.md)
 * [[shell commands] 다중 사용자 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_multi_user.md)
