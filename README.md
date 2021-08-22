@@ -25,6 +25,7 @@
 * [[shell commands] 리눅스 프로세스 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_linux_process.md)
 * [[shell commands] 리눅스 파일시스템 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_filesystem.md)
 * [[shell script] 쉘 스크립트의 이해와 변수](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_variable.md)
+* [[shell script] 조건문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_conditional.md)
 
 </details>
 
