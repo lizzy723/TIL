@@ -4,6 +4,20 @@
 * 쉘 스크립트 파일은 실행권한을 가지고 있어야한다.(`chmod +x main.sh`)
 * 일반적으로 `파일이름.sh`와같은 형태로 파일 이름을 작성한다.
 * 주석은 `#`으로 시작한다. 
+* 쉘 스크립트 예시: 로그 파일 정리하기
+  1. 2일 이상된 로그파일은 압축해서 보관
+  2. 압축된 로그파일중 3일 이상된 것은 삭제
+  ```
+  #!/bin/bash
+  LOGDIR=/var/log
+  GZIPDAY=1
+  DELDAY=2
+  cd $LOGDIR
+  echo "cd $LOGDIR"
+  sudo find . -type f -name '*log.?' -mtime +$GZIPDAY -exec bash -c "gzip {}" \; 2> /dev/null
+  sudo find . -type f -name '*.gz' -mtime +$DELDAY -exec bash -c "rm -f {}" \; 2> /dev/null
+  ```
+
 
 <br>
 
