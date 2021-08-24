@@ -22,13 +22,28 @@
 <br>
 
 ### B. 변수
-* 선언: `변수명=데이터`(띄어쓰기 허용되지 않음)
-* 사용: `$변수명`으로 사용됨
 ```
 #!/bin/bash
 mysql_id='root'
 echo $mysql_id
 ```
+* 선언: `변수명=데이터`(띄어쓰기 허용되지 않음)
+* 사용: `$변수명`으로 사용됨
+* `echo`: reporting
+  ```
+  echo hello
+  echo $0 #zsh/bash
+  ```
+  cf. **bash/zsh**
+  * bash/zsh는 어디에 있을까? → /bin에 있다!
+  * 둘 다 shell에 해당/ user마다 다른 shell을 사용할 수 있다.
+  * `echo $0`로 zsh, bash 여부를 알 수 있다.
+  * 만약 default shell 이외에 다른 shell을 실행하고 싶다면 zsh 또는 bash를 터미널 창에 입력하면 된다.
+  * 만약 설치되어 있지 않다면 `brew install zsh(linux: sudo apt get install zsh)`을 터미널 창에 입력하면 된다.
+  * 차이점
+    * zsh: `$cd /h/u` 에서 tab을 누르면 `/home/ubuntu`로 자동완성이 된다.
+    * bash는 그런 기능 없다.
+
 
 <br>
 
