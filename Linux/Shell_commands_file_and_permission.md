@@ -15,6 +15,9 @@
       ls -a #숨겨진 파일(.XXX)도 보여줌
       ls -S #sorting. 용량이 큰 파일부터 보여줌
       ```
+  * `open` :finder 창 열기 <br>
+     e.g. `open .` => 현재 directory 창 열기 <br>
+     cf. ubuntu: nautilus
   * `man`: 명령어 사용법 확인 e.g. `man ls`
   * `cat`: 파일 보기 <br>
     cf. `cat -n {file}`: file line을 1,2,3,,으로 같이 보여준다. <br>
@@ -23,6 +26,12 @@
     cf. `head -n 5 (file)`: 다음 file의 처음 5줄 보기(옵션 설정 가능) <br>
     cf. `tail -f`: 라인이 더 추가되면 화면이 refresh 된다. 
   * `more` : `cat`을 사용해서 보기엔 파일의 양이 너무 많은 경우, 화면이 넘어가기 전까지 보여준다. 스페이스를 누르면 다음장으로, 엔터를 누르면 한줄씩 넘어감
+  * `less`:   Less  is  a  program  similar  to  more(1), but which allows backward movement in the file as well as forward movement. <br>
+    `-S`: Causes lines longer than the screen width to be  chopped
+  * `jq`: 커맨드 라인에서 JSON을 손쉽게 다룰 수 있다. 
+    ```
+    $ head -1 2015-03-01-0.json | jq '.'
+    ```
   * `cut`: screen size에 맞춰서 한 줄에는 한 정보만 나오도록 잘라준다.
     * `cut -f1 file`: 이렇게 하면 첫번째 컬럼을 잘라서 보여줍니다. 단 file이 tab으로 delimit (구분)되어있다고 가정함.
     * 만약 file이 `,`(콤마)로 delimit 되어 있으면, `cut -f1 -d ‘,’ file` 이렇게 -d 라는 옵션을 사용함.
@@ -42,6 +51,8 @@
      cf. 파일 이름을 바꾸는 명령어도 mv이다. e.g. `mv tmp.txt tmp2.txt`
   * `rm`: 파일 및 폴더 삭제. 리눅스에는 기본적으로 휴지통이 없다. <br>
     `rm -rf`: 폴더 삭제 
+  * `clear`: bash 창 깨끗이/이전 command 보고 싶으면 위쪽 커서 누르기
+  * `history`: 이전에 사용한 command를 쭉 보여준다
 
 <br>
 
