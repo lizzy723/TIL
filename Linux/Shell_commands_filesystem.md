@@ -36,6 +36,8 @@
       find -type f                                             #파일만 찾겠다(폴더는 찾지 않고..!)
       find . -type f -name "tecmint.txt" -exec rm -f {} \;     #특정 파일을 찾아서 지우겠다/  exec: 실행시켜라  / {}: 내가 찾은 파일 이름이 들어감
       ```
+  * `whereis`: 실행코드의 위치를 알려준다. e.g. `whereis ls`
+  * `tree`: 폴더내 file system을 tree 형식으로 보여준다. e.g. `tree .`
 * 리눅스 파일 구조(참고 https://www.thegeekstuff.com/2010/09/linux-file-system-structure/) <br>
   <img width="600" alt="Screen Shot 2021-08-19 at 10 37 35 AM" src="https://user-images.githubusercontent.com/43725183/129993852-87898f8d-bbf7-4ef6-84c5-c49e491ffda3.png">
   * `/bin/`, `/sbin/`: 쉘명령어 실행 파일이 있다. 따라서 이 두 폴더는 기본적으로 환경 변수 설정이 되어 있다.(여기 있는 모든 프로그램이 어디에서든 실행될 수 있도록 하기 위해서)
