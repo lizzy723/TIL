@@ -37,7 +37,7 @@
   ps aux                   #백그라운드에서 돌아가는 모든 명령어를 보고 싶다면
   ps aux | grep apache     #아파치만 검색
   ```
-* `htop`: interactive process viewer
+* `htop`: interactive process viewer. htop을 쓸때는 sudo htop하면 더 정확하다.
   * CPU를 클릭하면 CPU를 기준으로 정렬이되고, MEM을 클릭하면 MEM 기준으로 정렬된다. 
   * RES: 실질적인 메모리 사용량
   * load average: CPU 점유율. 순서대로 `1분간의 CPU 점유율`, `5분간의 CPU 점유율`, `15분간의 CPU 점유율` <br>
@@ -71,3 +71,6 @@
   * 구글에서 `crontab expression`을 키워드로 검색하면 확인할 수 있다.  <br>
     e.g. `*/1 * * * * date >> date.log 2>&1`
   * `crontab -l` : cron 실행 리스트 확인
+* `;`(세미콜론): 여러작업을 연속해서 실행 가능 <br>
+  e.g. `mkdir folder; cd folder`
+
