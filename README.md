@@ -24,6 +24,7 @@
 * [[shell commands] 표준입출력 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_redirection_and_pipe.md)
 * [[shell commands] 리눅스 프로세스 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_linux_process.md)
 * [[shell commands] 리눅스 파일시스템 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_filesystem.md)
+* [[shell commands] 그 외 명령어(압축, 패키지관련...)](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_miscellaneous.md)
 * [[shell script] 쉘 스크립트의 이해와 변수](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_variable.md)
 * [[shell script] 조건문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_conditional.md)
 * [[shell script] 반복문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_iteration.md)
