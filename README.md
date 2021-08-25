@@ -28,6 +28,7 @@
 * [[shell script] 쉘 스크립트의 이해와 변수](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_variable.md)
 * [[shell script] 조건문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_conditional.md)
 * [[shell script] 반복문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_iteration.md)
+* [Linux ssh and rsync](https://github.com/lizzy723/TIL/blob/main/Linux/Linux_ssh_rsync.md)
 
 </details>
 
