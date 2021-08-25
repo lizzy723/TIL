@@ -19,6 +19,7 @@
 * [리눅스란?](https://github.com/lizzy723/TIL/blob/main/Linux/What_is_Linux.md)
 * [Linux text editor-Vim](https://github.com/lizzy723/TIL/blob/main/Linux/Linux_text_editor_Vim.md)
 * [Linux text editor-Nano](https://github.com/lizzy723/TIL/blob/main/Linux/Linux_text_editor_Nano.md)
+* [Linux ssh and rsync](https://github.com/lizzy723/TIL/blob/main/Linux/Linux_ssh_rsync.md)
 * [[shell commands] 다중 사용자 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_multi_user.md)
 * [[shell commands] 파일 및 권한 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_file_and_permission.md)
 * [[shell commands] 표준입출력 관련 명령어](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_commands_redirection_and_pipe.md)
@@ -28,7 +29,7 @@
 * [[shell script] 쉘 스크립트의 이해와 변수](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_variable.md)
 * [[shell script] 조건문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_conditional.md)
 * [[shell script] 반복문](https://github.com/lizzy723/TIL/blob/main/Linux/Shell_script_iteration.md)
-* [Linux ssh and rsync](https://github.com/lizzy723/TIL/blob/main/Linux/Linux_ssh_rsync.md)
+
 
 </details>
 
