@@ -32,7 +32,15 @@
 
 <br>
 
-### 2. rsync
+### B. scp
+
+- 파일 업로드 : `scp {file} {userID}@{IP address}:{directory}`
+- 폴더 업로드 : `scp -r`
+- 파일 다운로드 : `scp {userID}@{IP address}:{file path} {directory}`(업로드랑 반대로 하면 된다)
+
+<br>
+
+### C. rsync
 `r(remote)sync`를 사용하면 두 폴더의 내용을 동일하게 만들 수 있다(백업할때 사용하기 좋음). 심지어 멀리있는 두 컴퓨터를 네트워크/인터넷을 통해서 원격으로 sync할 수 있다. 
 
 - `rsync -a src/ dest`: src 폴더내의 모든 파일을 dest에 똑같이 만들기
