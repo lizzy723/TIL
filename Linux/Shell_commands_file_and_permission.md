@@ -53,6 +53,8 @@
     `rm -rf`: 폴더 삭제 
   * `clear`: bash 창 깨끗이/이전 command 보고 싶으면 위쪽 커서 누르기
   * `history`: 이전에 사용한 command를 쭉 보여준다
+  * `ctrl + a`: 커서를 앞으로
+  * `ctrl + e`: 커서를 맨뒤로
 
 <br>
 
