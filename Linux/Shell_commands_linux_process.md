@@ -20,9 +20,9 @@
   ```
   [1]은 작업번호(job number), 57은 프로세스 번호
 * foreground process 제어하기
-  * `Command + c`: 프로세스 작업 취소(해당 프로세스는 완전히 종료된다.)
+  * `Command + c`: 프로세스 작업 취소(해당 프로세스는 완전히 종료된다.). 프로세스에 인터럽트를 보내서 프로세스를 죽여라(SIGINT)
   * `Command + d`: 실행중인 파일 일시 중지
-  * `Command + z`: foreground 프로세스를 실행 중지 상태(suspend 모드)로 변경
+  * `Command + z`: foreground 프로세스를 실행 중지 상태(suspend 모드)로 변경. 프로세스를 멈춰라(SIGSTP)
   * `command + z`로 중지된 마지막 프로세스는 bg명령으로 background 프로세스로 실행될 수 있음. 또는 특정 숫자의 프로그램을 bg실행하고 싶다면 `bg 2`라고 하면 된다. <br>
     fg명령으로 foreground 프로세스로 실행될수도 있음.( + → - → 아무것도 없음 순으로 fg로 온다.) 또는 특정 숫자의 프로그램을 fg로 오게 하고 싶다면, `fg %2`라고 하면 된다.
   * `jobs` 명령어: 백그라운드로 진행 또는 중지된 상태로 있는 프로세스를 보여줌
