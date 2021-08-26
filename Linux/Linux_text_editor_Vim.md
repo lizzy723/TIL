@@ -102,6 +102,7 @@
       * `:set is`: 일부만 매칭되어도 보여준다. 
       * `:set hls`: 글자를 하이라이팅 해준다.
       * `:nohlsearch`: 하이라이팅 없애기
+      * `:set nowrap`: 한 줄에 하나
 
 7. help, vimrc, and completion
     * 도움말 보기
