@@ -1,7 +1,7 @@
 # Today I learned
 
 
-<details close>
+<details open>
 <summary>Git</summary><br>
  
 * [Git이란 무엇인가?](https://github.com/lizzy723/TIL/blob/main/Git/what_is_git.md)
@@ -13,7 +13,7 @@
 * [Github란 무엇인가?](https://github.com/lizzy723/TIL/blob/main/Git/What_is_github.md)
 </details>
 
-<details close>
+<details open>
  <summary>Linux</summary><br>
 
 * [리눅스란?](https://github.com/lizzy723/TIL/blob/main/Linux/What_is_Linux.md)
@@ -34,7 +34,7 @@
 
 </details>
 
-<details close>
+<details open>
  <summary>Docker</summary><br>
  
 * [Docker 설치](https://github.com/lizzy723/TIL/blob/main/Docker/Docker_installation.md) 
@@ -96,7 +96,7 @@
   </blockquote>
 </details>
 
-<details close>
+<details open>
 <summary>Apache spark</summary><br>
   
 * [Spark-in-action-study](https://github.com/lizzy723/Spark-in-action-study) repo Readme 참조
