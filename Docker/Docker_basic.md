@@ -27,6 +27,7 @@
 - Docker 기본 명령어
 
     ```bash
+    docker version          #docker 설치 확인. client와 server 정보가 나오면 성공!
     docker images           #docker image 리스트 확인
     docker ps               #실행중인 container리스트 확인
     docker ps -a            #모든 container리스트 확인
@@ -47,11 +48,30 @@
 
     exit         #쉘 종료하기 
     ```
+-  컨테이너 변경사항을 이미지에 커밋: `docker commit <container_id> <image_id>:<tag>`
+    ```
+    #Using Docker commit to create images
+    #Create a container from the ubuntu image
+    docker run -i -t ubuntu /bin/bash
+    
+    #Install Apache into the container
+    apt-get -yqq update
+    apt-get -y install apache2
+    
+    #exit from the container 
+    docker commit 6b84282435f8 dvdoc/apache2
+    #or
+    docker commit -m="A new custom image" --author="DV Suresh" \
+    6b84282435f8 dvdoc/apache2:webserver
+    ```
+    참고자료: http://moducon.kr/2018/wp-content/uploads/sites/2/2018/12/leesangsoo_slide.pdf
+    
+
 
 <br>
 
 ### C. 호스트와 컨테이너의 파일시스템 연결
-
+- 데이터 볼륨: 해당 디렉토리는 컨테이너와 별도로 저장되고 컨테이너를 삭제해도 데이터가 지워지지 않는다.
 - 컨테이너 내의 파일을 직접 수정해도 되지만, 만약 컨테이너가 사라진다면 내부 파일도 다 사라지기 때문에 이 방법은 좋지 않다. 대신, 호스트에 파일을 저장하고 이 파일이 저장된 폴더를 컨테이너에 연결하자.
 
     ```bash
@@ -59,6 +79,7 @@
     ```
 
     Host의 `~/Desktop/htdocs`와  container의 `/usr/local/apache2/htdocs/`를 연결
+
 
 <br>  
   
