@@ -118,7 +118,134 @@
     FROM table_name
     WHERE column_name IS NOT NULL;
     ``` 
+ <br>
+ 
+### C. `Like`, Wildcards, `In`, `Between`
+1. `Like` operator
+    WHERE clause안에서 특정 패턴이 있는지 확인.
+    - The percent sign (`%`) : 여러 글자(0글자, 1글자도 가능)
+    - The underscore sign (`_`) : 딱 한 글자.
+
+    ```sql
+    SELECT column1, column2, ...
+    FROM table_name
+    WHERE columnN LIKE pattern;
+    ```
+    <img width="600" alt="Screen Shot 2021-09-03 at 10 35 02 AM" src="https://user-images.githubusercontent.com/43725183/131937344-ff8644f3-2915-4102-a5f1-79ec47490612.png">
+
+2. Wildcards
+    Like와 함께 쓰이는 wildcards <br>
+    <img width="600" alt="Screen Shot 2021-09-03 at 10 35 58 AM" src="https://user-images.githubusercontent.com/43725183/131937423-faf71ce2-82f1-48cb-924f-0d796c3659db.png">
     
-### C.Like, Wildcards, in, between 
-### D. Insert into, update, delete, select top, limit, fetch..
+3. `In` operator
+    or 대신 사용하기.
+
+    ```sql
+    ##방법1
+    SELECT column_name(s)
+    FROM table_name
+    WHERE column_name IN (value1, value2, ...);
+
+    ##방법2
+    SELECT column_name(s)
+    FROM table_name
+    WHERE column_name IN (SELECT STATEMENT);
+    ```
+4. `Between` operator
+    경계값도 포함된다!(아래에서 value1과 value2도 포함됨)
+
+    ```sql
+    SELECT column_name(s)
+    FROM table_name
+    WHERE column_name BETWEEN value1 AND value2;
+    ```
+    날짜 표현하기: `BETWEEN #07/01/1996# AND #07/31/1996#;` 또는 `BETWEEN '1996-07-01' AND '1996-07-31';`
+
+<br>
+
+### D. `Insert into`, `Update`, `Delete`, Table 일부 불러오기(`Select top`, `Limit`, `Fetch First`, or `Rownum`)
+1. `Insert Into` statement
+    새로운 **record(row)** 를 추가할때 사용하는 statement. **괄호쓰는 것 중요!!**
+
+    ```sql
+    #방법1. column과 row값을 모두 나열
+    INSERT INTO table_name (column1, column2, column3, ...)
+    VALUES (value1, value2, value3, ...);
+    ```
+
+    ```sql
+    #방법2. 모든 column에 대한 값이 있다면 그냥 값만 나열해도 된다.
+    INSERT INTO table_name
+    VALUES (value1, value2, value3, ...);
+    ```
+2. `Update` statement
+    기존에 존재하던 record의 값을 수정할때.
+
+    ```sql
+    UPDATE table_name
+    SET column1 = value1, column2 = value2, ...
+    WHERE condition;
+    ```
+    ```sql
+    ##example
+    UPDATE Customers
+    SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+    WHERE CustomerID = 1;
+    ```
+    
+3. `Delete` statement
+    기존에 존재하던 record를 삭제할때
+
+    ```sql
+    DELETE FROM table_name WHERE condition;
+    DELETE FROM table_name;  //WHERE을 쓰지 않으면 table 전체가 사라진다. 
+    ```
+    
+4. `SELECT TOP`, `LIMIT`, `FETCH FIRST` or `ROWNUM` clause
+    table row 일부 불러오기. oracle, mySQL 등 RDBMS마다 방법이 다 다르므로 아래 페이지 참고하기<br>
+    [https://www.w3schools.com/sql/sql_top.asp](https://www.w3schools.com/sql/sql_top.asp)
+
+    ```sql
+    SELECT column_name(s)
+    FROM table_name
+    WHERE condition
+    LIMIT number;
+    ```
+
+<br>    
+
 ### E. functions
+1. `Min()` and `Max()` functions
+    특정 컬럼의 최소값 또는 최대값을 반환한다. 
+
+    ```sql
+    SELECT MIN(column_name)
+    FROM table_name
+    WHERE condition;
+    ```
+
+    ```sql
+    SELECT MAX(column_name)
+    FROM table_name
+    WHERE condition;
+    ```
+    
+2. `Count()`, `Avg()`, `Sum()` functions
+
+    ```sql
+    SELECT COUNT(column_name)
+    FROM table_name
+    WHERE condition;
+    ```
+
+    ```sql
+    SELECT AVG(column_name)
+    FROM table_name
+    WHERE condition;
+    ```
+
+    ```sql
+    SELECT SUM(column_name)
+    FROM table_name
+    WHERE condition;
+    ```
