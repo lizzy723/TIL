@@ -50,6 +50,7 @@
  <summary>SQL</summary>
 
 * [SQL 기본 문법 1](https://github.com/lizzy723/TIL/blob/main/SQL/SQL_basic1.md)
+* [SQL 기본 문법 2](https://github.com/lizzy723/TIL/blob/main/SQL/SQL_basic2.md)
 </details>
 
 <br> 
