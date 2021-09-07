@@ -56,7 +56,7 @@
 
 <br> 
 
-<details close>
+<details open>
 <summary>Python</summary>
 
 * Python Basics
@@ -72,17 +72,17 @@
   * [Module.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/Module.ipynb)
   * [Regular_expression.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/regular_expression.ipynb)
 
-* Python Modules
-  - Data engineering
-    * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
-    * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
-  * Data science
-    * Numpy
-    * Pandas
-  * Data visualization
-    * Matplotlib
-    * Seaborn
-    * Bokeh
+ * Data engineering
+   * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
+   * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
+ * Data science
+   * Numpy
+   * Pandas
+   * Scikit-learn
+   * Tensorflow
+ * Data visualization: Matplotlib, Seaborn, Bokeh
+   * Cheatsheet
+   * Code examples
 </details>
 
 <br> 
