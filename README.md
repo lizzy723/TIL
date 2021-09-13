@@ -81,7 +81,7 @@
    * Scikit-learn
    * Tensorflow
  * Data visualization: Matplotlib, Seaborn, Bokeh
-   * Cheatsheet
+   * [Cheatsheet](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_data_visualization.md)
    * [Code examples](https://github.com/lizzy723/TIL/blob/main/Python/Python_data_visualization.ipynb)
 </details>
 
