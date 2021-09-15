@@ -5,7 +5,50 @@
     - package 버젼 확인: `pip list | grep {module_name}`
 
 2. Conda
+    * 기본 사용법
+        - 생성 : `conda create --name test python=3.5`(python 3.5를 사용하는 test라는 이름의 가상환경 생성
+        - 가상환경 리스트 확인 : `conda env list`
+        - 가상환경 활성화 : `conda activate 가상환경명`
+        - 가상환경 삭제 : `conda remove -n test --all`
+        - e.g. python package 설치
+            ```
+            conda create -n $package_name
+            conda activate $package_name
+            conda install $package_name                   #plink, peddy 설치
+            conda install $package_name=version           #특정 버전 설치
+            conda install $package_name1 $package_name2   #여러개 동시에 설치
+            conda remove $package_name                    #package제거
+            pip install $package_name                     #conda 에서 관리하지 않는 패키지 설치
+            ```
+    * 그 외 사용법
+
+        - 버전 확인 : `conda --version`
+        - (콘다 자체)업데이트 : `conda update conda`/(안될땐, `conda update --force conda`)
+
+        - 패키지 설치 : `conda install 패키지명`
+        - 패키지 리스트 확인 : `conda list`
+        - 채널 추가: `conda config --add channels bioconda`
+        - 파이썬을 최신 버전으로 update: `conda update python`
+        - 모두 업데이트: `conda update --all`
+
+    * pycharm
+        * preference-python interpreter-show all - + - conda environment - existing environment
+        * 특정 conda 환경에서 pycharm 실행하기
+
+    * 참고 사이트
+        - https://teddylee777.github.io/python/anaconda-가상환경설정-팁-강좌
+        - (채널 설정) https://bioconda.github.io/user/install.html#set-up-channels
+
+
 3. venv
+
+    - 가상환경 만들기: `python3 -m venv {가상환경이름}`→ {가상환경이름} 폴더가 생성
+    - 가상환경 활성화: `source {가상환경이름}/bin/activate`
+    - 가상환경 종료: `deactivate`
+    - cf. virtualenv: venv 전에 나옴. venv와 다르게 직접 설치해야함. 두개 모두 환경 설정을 global하게 하지 않고 local하게 설정한다는 차이가 있음.
+    - [참고] https://www.daleseo.com/python-venv/
+
+
 4. Ipython
     ```bash
     #ipython --> python 
