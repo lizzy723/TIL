@@ -77,7 +77,7 @@
    * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
    * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
  * Data science
-   * Numpy
+   * [Numpy](https://github.com/lizzy723/TIL/blob/main/Python/Python_numpy.ipynb)
    * Pandas
    * Scikit-learn
    * Tensorflow
