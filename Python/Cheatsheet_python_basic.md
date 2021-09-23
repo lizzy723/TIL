@@ -141,3 +141,33 @@
       #저장하기
       pickle.dump(rfc, open(modelpath + 'rfc00.pkl', 'wb' ))
       ```
+
+### C. 파일 읽고 쓰기
+  - with open("moon.txt") as f:
+  
+1. open, write, close
+    - 파일의 종류 : txt, binary
+    - 파일의 모드 : read(r), write(w), append(a)
+    - 파일 열기(read mode) : `open(path,'r')` -> **open** function으로 파일을 가져오면, 이는 **generator 형태**
+        - 다른 generator 처럼 next, for... 등을 사용할 수 있다
+        - 추가적으로 read(), readline(), readlines()를 쓸 수 있다. 
+            - 한줄 : `text.readline()`
+            - 전체 : `text.read()`
+            - 리스트 형식으로 전체 : `.readlines()`
+    - 파일 닫기 : `text.close()` --> 위의 기능을 쓸 수 없다.
+    - 파일 쓰기 예시
+        ```python
+        text=open(path,'w')
+        for i in range(10):
+            data= ('Plyer%d.\n' %i)   
+            text.write(data)
+        text.close()
+        ```
+
+2. 파일 스트리밍 : **`with`** -> 따로 close를 하지 않아도 된다. 
+    ```
+    with open(path,'a') as text:
+    for i in range(12, 16):
+        data=('writer%d.\n' %i)
+        text.write(data)
+    ```
