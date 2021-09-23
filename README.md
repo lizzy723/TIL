@@ -71,7 +71,7 @@
   * [OOP.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/OOP.ipynb)
   * [Module.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/Module.ipynb)
   * [Regular_expression.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/regular_expression.ipynb)
-  * [Cheatsheet(파이썬 환경, 코딩 팁 등)](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_python_basic.md)
+  * [Cheatsheet(파이썬 환경, 코딩 팁, 파일 읽고 쓰기)](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_python_basic.md)
 
  * Data engineering
    * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
