@@ -78,7 +78,7 @@
    * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
  * Data science
    * [Numpy](https://github.com/lizzy723/TIL/blob/main/Python/Python_numpy.ipynb)
-   * Pandas
+   * [Pandas](https://github.com/lizzy723/TIL/blob/main/Python/Python_pandas.ipynb)
    * Scikit-learn
    * Tensorflow
  * Data visualization: Matplotlib, Seaborn, Bokeh
