@@ -142,8 +142,9 @@
       pickle.dump(rfc, open(modelpath + 'rfc00.pkl', 'wb' ))
       ```
 
+<br>
+
 ### C. 파일 읽고 쓰기
-  - with open("moon.txt") as f:
   
 1. open, write, close
     - 파일의 종류 : txt, binary
@@ -165,7 +166,7 @@
         ```
 
 2. 파일 스트리밍 : **`with`** -> 따로 close를 하지 않아도 된다. 
-    ```
+    ```python
     with open(path,'a') as text:
     for i in range(12, 16):
         data=('writer%d.\n' %i)
