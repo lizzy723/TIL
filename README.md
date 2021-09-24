@@ -73,17 +73,18 @@
   * [Regular_expression.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/regular_expression.ipynb)
   * [Cheatsheet(파이썬 환경, 코딩 팁, 파일 읽고 쓰기)](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_python_basic.md)
 
- * Data engineering
-   * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
-   * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
  * Data science
    * [Numpy](https://github.com/lizzy723/TIL/blob/main/Python/Python_numpy.ipynb)
    * [Pandas](https://github.com/lizzy723/TIL/blob/main/Python/Python_pandas.ipynb)
-   * Scikit-learn
+   * [Scikit-learn](https://github.com/lizzy723/TIL/blob/main/Python/Python_scikit_learn.md)
    * Tensorflow
  * Data visualization: Matplotlib, Seaborn, Bokeh
    * [Cheatsheet](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_data_visualization.md)
    * [Code examples](https://github.com/lizzy723/TIL/blob/main/Python/Python_data_visualization.ipynb)
+ * Data engineering
+   * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
+   * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
+
 </details>
 
 <br> 
