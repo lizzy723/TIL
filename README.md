@@ -93,6 +93,7 @@
  <summary>R</summary>
  
 * [dplyr](https://github.com/lizzy723/TIL/blob/main/R/R_dplyr.md)
+* [tidyr](https://github.com/lizzy723/TIL/blob/main/R/R_tidyr.md)
 </details>
 
 <br> 
