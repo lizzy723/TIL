@@ -94,6 +94,7 @@
  
 * [dplyr](https://github.com/lizzy723/TIL/blob/main/R/R_dplyr.md)
 * [tidyr](https://github.com/lizzy723/TIL/blob/main/R/R_tidyr.md)
+* [ggplot2](https://github.com/lizzy723/TIL/blob/main/R/R_ggplot2.md)
 </details>
 
 <br> 
