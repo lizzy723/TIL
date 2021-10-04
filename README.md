@@ -71,25 +71,31 @@
   * [OOP.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/OOP.ipynb)
   * [Module.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/Module.ipynb)
   * [Regular_expression.ipynb](https://github.com/lizzy723/TIL/blob/main/Python/regular_expression.ipynb)
-  * [Cheatsheet(파이썬 환경, 코딩 팁 등)](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_python_basic.md)
+  * [Cheatsheet(파이썬 환경, 코딩 팁, 파일 읽고 쓰기)](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_python_basic.md)
 
- * Data engineering
-   * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
-   * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
  * Data science
    * [Numpy](https://github.com/lizzy723/TIL/blob/main/Python/Python_numpy.ipynb)
    * [Pandas](https://github.com/lizzy723/TIL/blob/main/Python/Python_pandas.ipynb)
-   * Scikit-learn
+   * [Scikit-learn](https://github.com/lizzy723/TIL/blob/main/Python/Python_scikit_learn.md)
    * Tensorflow
  * Data visualization: Matplotlib, Seaborn, Bokeh
    * [Cheatsheet](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_data_visualization.md)
    * [Code examples](https://github.com/lizzy723/TIL/blob/main/Python/Python_data_visualization.ipynb)
+ * Data engineering
+   * [Pymysql](https://github.com/lizzy723/TIL/blob/main/Python/Pymysql.ipynb)
+   * [Pyspark](https://github.com/lizzy723/TIL/blob/main/Python/Pyspark.ipynb)
+
 </details>
 
 <br> 
 
-<details close>
+<details open>
  <summary>R</summary>
+ 
+* [dplyr](https://github.com/lizzy723/TIL/blob/main/R/R_dplyr.md)
+* [tidyr](https://github.com/lizzy723/TIL/blob/main/R/R_tidyr.md)
+* [ggplot2](https://github.com/lizzy723/TIL/blob/main/R/R_ggplot2.md)
+* [data.table](https://github.com/lizzy723/TIL/blob/main/R/R_data.table.md)
 </details>
 
 <br> 
