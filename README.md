@@ -76,7 +76,7 @@
 
  * Data science
    * [Numpy](https://github.com/lizzy723/TIL/blob/main/Python/Python_numpy.ipynb)
-   * [Pandas](https://github.com/lizzy723/TIL/blob/main/Python/Python_pandas.ipynb)
+   * [Pandas](https://github.com/lizzy723/TIL/blob/main/Python/Python_pandas.ipynb), [Cheatsheet](https://github.com/lizzy723/TIL/blob/main/Python/Cheatsheet_Data_science.md)
    * [Scikit-learn](https://github.com/lizzy723/TIL/blob/main/Python/Python_scikit_learn.md)
    * Tensorflow
  * Data visualization: Matplotlib, Seaborn, Bokeh
