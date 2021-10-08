@@ -377,3 +377,8 @@
     ON (HOUR(DATETIME) = h)
     GROUP BY h;
     ```
+
+<br>
+
+### Notes
+* W3Schools SQL tutorial: https://www.w3schools.com/sql/default.asp
