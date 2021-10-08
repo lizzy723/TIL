@@ -445,3 +445,7 @@
     - SQL Logical Operators
       <img width="800" alt="Screen Shot 2021-09-06 at 9 52 40 AM" src="https://user-images.githubusercontent.com/43725183/132146645-f9e8ef46-515f-45e5-a057-e7e29ec30eff.png">  
 
+<br>
+
+### Notes
+* W3Schools SQL tutorial: https://www.w3schools.com/sql/default.asp
