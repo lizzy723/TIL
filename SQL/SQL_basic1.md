@@ -249,3 +249,8 @@
     FROM table_name
     WHERE condition;
     ```
+
+<br>
+
+### Notes
+* W3Schools SQL tutorial: https://www.w3schools.com/sql/default.asp
