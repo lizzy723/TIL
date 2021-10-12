@@ -42,6 +42,18 @@
   * `RUN`과 `CMD`의 차이: `RUN`은 build 진행과정에서의 명령어이고, `CMD`는 build 완료 후 container에서 실행될때의 명령어. 
   * build로 이미지 생성 후, container 실행시에 마지막 CMD가 실행되지 않게 하고 싶다면 docker run 마지막에 pwd 쓰기(overriding) e.g. `docker run -p 8888:8000 --name web-server wev-server-build pwd;`
   
+### C. push
+* Docker image를 공유(하기위해 repository로 이미지는 push) 하는 방법
+* repositories-create repository를 눌러 새로운 이미지 리파지토리 만들기.
+  ```
+  docker commit my-python {id}/{image_name}:1.0        #commit. 여기서 1.0은 tag
+  docker login                                         #login
+  docker push {id}/{image_name}:1.0
+  ```
+* image 내려 받기
+  ```
+  docker pull {id}/{image_name}
+  ```
 
 ### Notes
 * 생활코딩
