@@ -55,5 +55,20 @@
   docker pull {id}/{image_name}
   ```
 
+### D. Registry
+* 원격저장소(Registry): 여러가지 서비스가 있다. e.g. hub.docker.com, Github.com(Packages-Containers Registry), Amazon Elastic Container Registry, Azure Container Registry, Google Container Registry, Harbor
+* docker registry는 무료로 1개만 사용할 수 있다. 
+* Github-Packages-Containers에서 docker를 위한 Registry만들기
+  * token 만들기
+  * 로그인 하기
+    ```
+    #방법 1
+    docker login ghcr.io -u {id} -p {personal_access_token}
+    #방법 2(더 안전한 방법)
+    export CR_PAT={token}
+    echo $CR_PAT | docker login ghcr.io -u {id} -password-stdin
+    ```
+  * docker commit으로 이미지 만들고, docker push로 registry에 올리기
+
 ### Notes
 * 생활코딩
