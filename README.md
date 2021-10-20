@@ -38,6 +38,14 @@
 <br> 
 
 <details open>
+ <summary>AWS</summary>
+ 
+* [AWS란?](https://github.com/lizzy723/TIL/blob/main/AWS/What_is_AWS.md)
+</details>
+
+<br>
+
+<details open>
  <summary>Docker</summary>
  
 * [Docker 설치](https://github.com/lizzy723/TIL/blob/main/Docker/Docker_installation.md) 
