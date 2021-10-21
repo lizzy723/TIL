@@ -6,6 +6,14 @@
     * Identity & Access Management(IAM) console에서 MFA(multi-factor authentication) 설정하기 → Virtual MFA device
     * 휴대폰에 Google OTP 앱 설치
   * **지역과 가용구역**
+    * **지역(Region)**: 클라우드가 물리적으로 위치한 곳. 클라우드 인프라가 서비스를 제공하고자 하는 위치로부터 멀수록 네트워크로 인한 지연시간이 발생하므로, **지역**은 굉장히 중요한 문제!
+    * **가용구역(availability zone, az)**: 하나의 지역(Region)에 여러개의 가용구역(az)이 있다. 
+
+<br>
+
+### B. AWS를 제어하는 방법
+
+<br>
 
 ### Notes
 * 생활코딩: https://opentutorials.org/course/2717
