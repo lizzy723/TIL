@@ -41,6 +41,7 @@
  <summary>AWS</summary>
  
 * [AWS란?](https://github.com/lizzy723/TIL/blob/main/AWS/What_is_AWS.md)
+* [EC2](https://github.com/lizzy723/TIL/blob/main/AWS/AWS_EC2.md)
 </details>
 
 <br>
