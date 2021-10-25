@@ -12,7 +12,16 @@
   e.g. 웹서버의 경우 Type이고 HTTPS, source가 Anywere인 정책을 추가하면 모든 사람들이 웹을 통해 접근 가능.
 * **[Step7] Review Instance Launch**: 마지막 점검 + key-pair 다운로드
 
+<br> 
 
+### B. EC2 원격제어
+인스턴스 마우스 오른쪽 클릭하면 connect에 대한 설명이 나와있음.
+1. Open an SSH client: 터미널 켜기
+2. Locate your private key file(`dev/key/aws_password.pem`)
+3. 처음에는 mode를 바꿔줘야함: `chmod 400 aws_password.pem`
+4. Connect to your instance using its public IP: `ssh -i "aws_password.pem" ubuntu@{ip address}`
+
+<br> 
 
 ### Notes
 * 생활코딩: https://opentutorials.org/course/2717
