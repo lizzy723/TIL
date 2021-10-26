@@ -23,6 +23,13 @@
 
 <br> 
 
+### C. 다른 AMI 사용하기(AWS Marketplace, Community AMIs)
+* OS에 필요한 소프트웨어가 설치되어 있는 AMI(Amazon Machine Image)를 사용하면, 해당 소프트웨어를 설치하지 않고 인스턴스 생성과 동시에 소프트웨어를 사용할 수 있다.
+  e.g. [Wordpress on ubuntu](https://aws.amazon.com/marketplace/pp/prodview-stdrbzcdzipdy?sr=0-11&ref_=beagle&applicationId=AWSMPContessa)
+* EC2 instance를 만들때 선택해도 되고, 원하는 AMI를 구글에서 검색해서 만들어도 된다. 
+
+<br> 
+
 ### Notes
 * 생활코딩: https://opentutorials.org/course/2717
 * EC2 인스턴스: https://www.parkmycloud.com/blog/ec2-instance-types/
