@@ -30,6 +30,19 @@
 
 <br> 
 
+### D. EC2 Scalability
+* 가상 머신: 운영체제 위에 설치되는 소프르웨어지만, 가상 머신으로 다양한 운영체제를 하나의 컴퓨터에서 사용할 수 있게 된다. <br>
+  e.g. 개인용(VMWare, VirtualBox, Parallels) <br>
+  <img width="400" alt="Screen Shot 2021-10-27 at 10 03 02 AM" src="https://user-images.githubusercontent.com/43725183/138982612-9aa03f0c-fe85-40fa-b420-5a077e39551f.png"><br>
+  → 클라우드 서비스의 Scalability를 구현하는데 핵심적으로 필요한 기술. 물리적 컴퓨팅 단위보다 훨씬 작거나 큰 크기의 컴퓨팅 기기를 대여하는 것이 가능해짐. 
+* Scale을 키우는 두 가지 방법
+  * **Scale up**: 하나의 컴퓨터를 더 좋은 컴퓨터로 교체하는 것
+  * **Scale out**: 
+
+
+<br> 
+
+
 ### Notes
 * 생활코딩: https://opentutorials.org/course/2717
 * EC2 인스턴스: https://www.parkmycloud.com/blog/ec2-instance-types/
