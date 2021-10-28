@@ -36,7 +36,9 @@
   <img width="400" alt="Screen Shot 2021-10-27 at 10 03 02 AM" src="https://user-images.githubusercontent.com/43725183/138982612-9aa03f0c-fe85-40fa-b420-5a077e39551f.png"><br>
   → 클라우드 서비스의 Scalability를 구현하는데 핵심적으로 필요한 기술. 물리적 컴퓨팅 단위보다 훨씬 작거나 큰 크기의 컴퓨팅 기기를 대여하는 것이 가능해짐. 
 * Scale을 키우는 두 가지 방법
-  * **Scale up**: 하나의 컴퓨터를 더 좋은 컴퓨터로 교체하는 것
+  * **Scale up**: 기존의 인스턴스를 이미지로 만들어두고, 더 좋은 인스턴스 타입에서 이미지를 다시 실행하는 방법.
+    * 문제: 인스턴스는 만들때마다(심지어 stop후 start할때도) public IP 및 public DNS가 바뀐다. 
+    * 대안: **Elastic IP**. AWS로부터 Elastic IP라는 고정 IP를 받아서, 해당 인스턴스에 Associate시킨다. (즉, 기존 인스턴스와 disassociate 한 후 새로운 인스턴스와 associate하기)
   * **Scale out**: 
 
 
