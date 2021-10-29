@@ -39,7 +39,10 @@
   * **Scale up**: 기존의 인스턴스를 이미지로 만들어두고, 더 좋은 인스턴스 타입에서 이미지를 다시 실행하는 방법.
     * 문제: 인스턴스는 만들때마다(심지어 stop후 start할때도) public IP 및 public DNS가 바뀐다. 
     * 대안: **Elastic IP**. AWS로부터 Elastic IP라는 고정 IP를 받아서, 해당 인스턴스에 Associate시킨다. (즉, 기존 인스턴스와 disassociate 한 후 새로운 인스턴스와 associate하기)
-  * **Scale out**: 
+  * **Scale out**: 프로그램을 이루는 각 부분(e.g. web server, middle ware, database)을 여러대의 컴퓨터로 분산시켜, 여러대의 컴퓨터가 마치 한 대의 컴퓨터처럼 작동하도록 하는 방법.
+    * 웹서버의 경우, Domain name이나 **Load balancer**를 이용한 방법으로 여러대의 web server로의 scale out을 구현할 수 있게 된다. 
+    * **ELB(Elastic Load Balancer)**: 웹 서버 앞단에서 각 웹서버에게 Load를 할당하는 역할을 함. 사용자는 ELB Domain name으로 웹 서버에 request를 보낸다. ELB가 사용자들의 request를 각 웹서버에게 나눠준다. 
+    * **Autoscaling**: 새로운 instance를 만들고, ELB에 연결하는 작업을 자동으로 해주는 것이 바로 Autoscaling
 
 
 <br> 
