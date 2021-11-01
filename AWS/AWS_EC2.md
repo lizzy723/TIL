@@ -43,9 +43,12 @@
     * 웹서버의 경우, Domain name이나 **Load balancer**를 이용한 방법으로 여러대의 web server로의 scale out을 구현할 수 있게 된다. 
     * **ELB(Elastic Load Balancer)**: 웹 서버 앞단에서 각 웹서버에게 Load를 할당하는 역할을 함. 사용자는 ELB Domain name으로 웹 서버에 request를 보낸다. ELB가 사용자들의 request를 각 웹서버에게 나눠준다. 
     * **Autoscaling**: 새로운 instance를 만들고, ELB에 연결하는 작업을 자동으로 해주는 것이 바로 Autoscaling
+      * **Launch configuration**: Auto scaling의 대상이 되는 instance의 이미지를 설정. 
+      * **Auto scaling group**: 언제 위에서 만든 instance가 언제 생성되고 삭제되도록 할 것인지를 설정. 
 
 
 <br> 
+
 
 
 ### Notes
