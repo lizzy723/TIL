@@ -10,6 +10,13 @@
   ```
   for 변수 in 변수값1 변수값2 ...; do  명령문; done
   ```
+* 순차적으로 증가하면서 반복: 점 2개다.
+  ```
+  for var in {1..5}
+  do
+    touch P0$var.cpp
+  done
+  ```
 * 기본 while 구문
   ```
   while [ 조건문 ]
